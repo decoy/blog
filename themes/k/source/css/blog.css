@@ -1,6 +1,10 @@
+/* fonts ahoy */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* general tags */
 
 body {
     background-color: #2D2D29;
@@ -22,8 +26,7 @@ a {
     text-decoration: none;
     color: #215A6D;
     -o-transition: .25s;
-    -ms-transition: .25s 
-    -moz-transition:.25s;
+    -ms-transition: .25s -moz-transition:.25s;
     -webkit-transition: .25s;
     transition: .25s;
 }
@@ -38,6 +41,7 @@ blockquote {
 }
 
 
+/* page sections */
 
 #header {
     background-color: #2D2D29;
@@ -52,15 +56,7 @@ blockquote {
         border-bottom: 20px solid #92C7A3;
     }
 
-article.post {
-    padding: 20px;
-    background-color: #fff;
-}
-
-
-
 #footer {
- 
 }
 
     #footer:before {
@@ -72,6 +68,11 @@ article.post {
     }
 
 /* article colors */
+
+article.post {
+    padding: 20px;
+    background-color: #fff;
+}
 
 .post {
     background-color: #FFFFFF;
@@ -108,4 +109,82 @@ article .article-tags .article-tag {
         font-size: 1.75em;
         border-bottom: 1px dotted #DFECE6;
         color: #222;
+    }
+
+
+
+
+/* Code section styles */
+
+
+
+pre, code {
+    font-family: "Source Code Pro", monospace;
+    border: 1px dotted #ccc;
+    padding: 2px;
+    white-space: pre;
+}
+
+    pre .comment,
+    pre .title {
+        color: #999;
+    }
+
+    pre .variable,
+    pre .attribute,
+    pre .tag,
+    pre .regexp,
+    pre .ruby .constant,
+    pre .xml .tag .title,
+    pre .xml .pi,
+    pre .xml .doctype,
+    pre .html .doctype,
+    pre .css .id,
+    pre .css .class,
+    pre .css .pseudo {
+        color: #f2777a;
+    }
+
+    pre .number,
+    pre .preprocessor,
+    pre .built_in,
+    pre .literal,
+    pre .params,
+    pre .constant {
+        color: #f99157;
+    }
+
+    pre .class,
+    pre .ruby .class .title,
+    pre .css .rules .attribute {
+        color: #9c9;
+    }
+
+    pre .string,
+    pre .value,
+    pre .inheritance,
+    pre .header,
+    pre .ruby .symbol,
+    pre .xml .cdata {
+        color: #9c9;
+    }
+
+    pre .css .hexcolor {
+        color: #6cc;
+    }
+
+    pre .function,
+    pre .python .decorator,
+    pre .python .title,
+    pre .ruby .function .title,
+    pre .ruby .title .keyword,
+    pre .perl .sub,
+    pre .javascript .title,
+    pre .coffeescript .title {
+        color: #69c;
+    }
+
+    pre .keyword,
+    pre .javascript .function {
+        color: #c9c;
     }
