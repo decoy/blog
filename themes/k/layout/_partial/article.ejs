@@ -1,0 +1,31 @@
+<article class="<%= item.layout %>">
+
+    <div class="article-date">
+        <p class="article-day"><%- item.date.format("DD") %></p>
+        <p class="article-month"><%- item.date.format("MMM YYYY") %></p>
+    </div>
+
+    <header>
+
+        <%- partial('post/title') %>
+
+
+    </header>
+
+
+    <div class="article-entry">
+        <% if (item.excerpt && index){ %>
+        <%- item.excerpt %>
+        <% } else { %>
+        <%- item.content %>
+        <% } %>
+    </div>
+    <footer>
+        <div class="article-tags">
+            <%- partial('post/tag') %>
+        </div>
+
+        <%- partial('comment') %>
+    </footer>
+
+</article>

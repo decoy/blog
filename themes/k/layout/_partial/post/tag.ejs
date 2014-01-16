@@ -1,0 +1,6 @@
+<% if (item.tags && item.tags.length){ %>
+Tags:
+  <% item.tags.forEach(function(tag) { %>
+<a href='<%= config.root + tag.path %>' class="article-tag"><%= tag.name %></a>
+  <% }); %>
+<% } %>
