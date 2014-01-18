@@ -13,7 +13,7 @@ body {
 }
 
 article, header {
-    overflow: hidden;
+   
 }
 
 p {
@@ -21,21 +21,23 @@ p {
 }
 
 article .article-tags {
-    float: right;
+    
 }
 
-    article .article-tags .article-tag {
-        
-         border-radius: 50px;
-    }
+article.post{
+    
+}
+
 
 article .article-date {
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    position: absolute;
-    margin-top: -60px;
+    
+    position: relative;
+    margin-top: -50px;
     margin-left: -50px;
     left: 50%;
+
 }
 

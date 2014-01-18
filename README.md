@@ -1,4 +1,3 @@
-blog
+A blog about a blog
 ====
 
-blog blog

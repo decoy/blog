@@ -1,0 +1,19 @@
+<% if (site.tags && site.tags.length){ %>
+  <%
+  var tags = [];
+      site.tags.forEach(function(tag){
+        var t = {
+            name: tag.name,
+            path: tag.path,
+            permalink: tag.permalink,
+            slug: tag.slug, 
+            length: tag.length
+        };
+        tags.push(t);
+      });
+  %>
+<script type="text/javascript">
+    //the tag 'cloud'
+    var tags = <%- JSON.stringify(tags) %>;
+</script>
+<% } %>
