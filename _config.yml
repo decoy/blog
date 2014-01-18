@@ -3,7 +3,7 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: piffner.com
+title: kellen.piffner.com
 subtitle: 
 description: Blogging about technology
 author: Kellen Piffner
@@ -12,7 +12,7 @@ language: English
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://piffner.com
+url: http://kellen.piffner.com
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -22,7 +22,7 @@ code_dir: downloads/code
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: decoy.github.io
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
