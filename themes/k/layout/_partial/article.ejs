@@ -5,9 +5,7 @@
     </div>
    
     <header>
-        <div class="article-tags">
-            <%- partial('post/tag') %>
-        </div>
+        
         <%- partial('post/title') %>
        
     </header>
@@ -21,7 +19,9 @@
     </div>
    
     <footer>
-       
+        <div class="article-tags">
+            <%- partial('post/tag') %>
+        </div>
         <% if (!index){ %>
             <%- partial('comment') %>
         <% } %>
