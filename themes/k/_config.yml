@@ -1,23 +1,16 @@
 # Header
-menu:
-  Home: /
-  Archives: /archives
 rss: /atom.xml
+twitter: https://twitter.com/@decoyahoy
+google_plus: https://plus.google.com/109745187704465695599/about
+github: https://github.com/decoy
+linked_in: http://www.linkedin.com/in/kellenpiffner
+
 
 # Content
 excerpt_link: Read More
 
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
-
 # Miscellaneous
-google_analytics:
+google_analytics: UA-47279370-1
+google_analytics_site: piffner.com
+
 favicon: /favicon.ico
-twitter:
-google_plus:
