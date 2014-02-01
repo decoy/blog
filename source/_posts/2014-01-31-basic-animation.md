@@ -14,7 +14,7 @@ Back in "the day", many games just updated as the CPU could.  If you loaded the 
 You can end up with this same problem by being 'frame rate dependent' with your animations.  Basically, this means that you update the position of your objects at the same time that you draw the object.
 
 Here's an example running 10fps, 30fps, and 60fps while drawing a simple animation:
-<p data-height="250" data-theme-id="4105" data-slug-hash="LHgbm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/LHgbm'>frame based animation</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="175" data-theme-id="4105" data-slug-hash="LHgbm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/LHgbm'>frame based animation</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 The ball object handles the 'bounce' effect.
@@ -125,7 +125,7 @@ BallCanvas.prototype.animate = function () {
 
 And this is it running:
 
-<p data-height="250" data-theme-id="4105" data-slug-hash="gImtA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/gImtA'>frame based animation</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="175" data-theme-id="4105" data-slug-hash="gImtA" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/gImtA'>frame based animation</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Now, the side of me that spends all day separating business logic from infrastructure code keeps asking why I'm calculating positions inside of a draw loop.  Separation of concerns is a big deal in large software projects. This brings me to the next option: have a loop just for updating.
@@ -154,12 +154,12 @@ function updateBalls() {
 }
 ```
 
-<p data-height="250" data-theme-id="4105" data-slug-hash="BfCnq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/BfCnq'>update loop separate from draw loops</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="175" data-theme-id="4105" data-slug-hash="BfCnq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/BfCnq'>update loop separate from draw loops</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 The same results, but note the math is gone, and the code is overall simpler.  This also leads to a more useful scenario of handling user input in a way where we don't have to care what's happening with the draw loop.  How about we watch the mouse cursor?
 
-<p data-height="250" data-theme-id="4105" data-slug-hash="daIus" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/daIus'>follow the mouse</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="175" data-theme-id="4105" data-slug-hash="daIus" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/daIus'>follow the mouse</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 Neat!  All we did was replace our update loop from the previous example with this:
