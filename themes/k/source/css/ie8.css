@@ -1,0 +1,23 @@
+﻿.symbol {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+    .symbol:after {
+        content: attr(title) " ";
+    }
+
+.post:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 1px;
+    background-color: #3CA2A2;
+}
+
+.unsupported-browser{
+    background-color: #ff00dc;
+    color: #000;
+    padding: 10px;
+}
+

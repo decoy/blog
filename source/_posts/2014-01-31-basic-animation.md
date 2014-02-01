@@ -5,7 +5,7 @@ tags: [javascript, web, css]
 
 In my day job, I spend a lot of time coding core business logic applications.  What do you do with data A in situation B kind of logic.  So when I work on something code related in my off time, I like to putz with technologies outside of that bubble.
 
-So, with that in mind, I'm going to talk about animation.
+With that in mind, I'm going to talk about animation.
 
 ## Old School
 
