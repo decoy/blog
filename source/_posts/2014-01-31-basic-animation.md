@@ -9,7 +9,7 @@ With that in mind, I'm going to talk about animation.
 
 ## Old School
 
-Back in "the day", many games just updated as the CPU could.  If you loaded the same game on a faster computer, the animations would move faster.  This could result in fun times likes a typing game where the game's "40 words per minute" was closer to 120. (I regularly scored 14!)
+Back in "the day", many games just updated as fast as the CPU could.  If you loaded the same game on a faster computer, the animations would move faster.  This could result in fun times likes a typing game where the game's "40 words per minute" was closer to 120. (I regularly scored 14!)
 
 You can end up with this same problem by being 'frame rate dependent' with your animations.  Basically, this means that you update the position of your objects at the same time that you draw the object.
 
