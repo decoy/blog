@@ -3,13 +3,13 @@
         <p class="article-day"><%- item.date.format("DD") %></p>
         <p class="article-month"><%- item.date.format("MMM YYYY") %></p>
     </div>
-   
+
     <header>
-        
+
         <%- partial('post/title') %>
-       
+
     </header>
-   
+
     <div class="article-entry">
         <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
@@ -17,13 +17,15 @@
         <%- item.content %>
         <% } %>
     </div>
-   
+
     <footer>
         <div class="article-tags">
             <%- partial('post/tag') %>
         </div>
+        
         <% if (!index){ %>
-            <%- partial('comment') %>
+        <div class="article-author">Posted by <%- config.author %><br />  <%- item.date.toISOString() %></div>
+        <%- partial('comment') %>
         <% } %>
     </footer>
 </article>
