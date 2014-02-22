@@ -1,6 +1,6 @@
 title: Basic Animation
 date: 2014-01-31 19:52:32
-tags: [javascript, web, css]
+tags: [javascript, web, codepen, animation]
 ---
 
 In my day job, I spend a lot of time coding core business logic applications.  What do you do with data A in situation B kind of logic.  So when I work on something code related in my off time, I like to putz with technologies outside of that bubble.
