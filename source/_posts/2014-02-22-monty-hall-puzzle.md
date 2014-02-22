@@ -1,7 +1,7 @@
 title: Monty Hall Puzzle
 date: 2014-02-22 10:33:03
 tags: [javascript, css3, angularjs, web, codepen]
-thumb: /img/montyhall_thumb.png
+thumb: img/montyhall_thumb.png
 description: Simulates the Monty Hall "puzzle" using javascript, css3, angularjs and codepen.
 ---
 
