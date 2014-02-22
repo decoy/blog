@@ -1,8 +1,10 @@
-﻿<head>
+<head>
     <meta charset="utf-8" />
-    <meta name="description" content="<%= config.description %>" />
     <meta name="author" content="<%= config.author %>" />
+    <% if (page.title){ %><meta name="title" content="<%= page.title %>" /><% } %>
+    <meta name="description" content="<% if (page.description) { %><%= page.description %><% } else { %><%= config.description %><% } %>" />
     <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
+    <% if (page.thumb){ %><link rel="image_src" href="<%= page.thumb %>" /><% } %>
     <% if (theme.rss){ %><link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"><% } %>
     <% if (theme.favicon){ %><link rel="icon" href="<%- theme.favicon %>"><% } %>
     <link rel="stylesheet" href="<%- config.root %>css/normalize.css" type="text/css">
@@ -13,4 +15,5 @@
         <link rel="stylesheet" href="<%- config.root %>css/ie8.css" type="text/css">
     <![endif]-->
     <%- partial('google_analytics') %>
+    
 </head>
