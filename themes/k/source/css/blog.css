@@ -105,7 +105,7 @@ blockquote {
     font-style: normal;
 }
 
-.symbol {
+.social-symbol {
     font-family: 'Mono Social Icons Font';
     -webkit-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
@@ -114,7 +114,7 @@ blockquote {
     font-size: 60px;
 }
 
-a.symbol {
+a.social-symbol {
     cursor: pointer;
 }
 
