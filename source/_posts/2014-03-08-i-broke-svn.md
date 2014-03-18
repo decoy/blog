@@ -29,7 +29,7 @@ Unfortunately, running the cleanup with those options and then switching resulte
 
 {% limg img/tsvn_switch_error.png title="Break all the things" %}
 
-I couldn't recreate this exact error from the command line, so I'm not sure if it's a Tortoise specific, or just something odd with the way it does the cleanup.
+I couldn't recreate this exact error from the command line, so I'm not sure if it's a Tortoise specific, or just something odd with the way it does the cleanup.  My best guess is that the cleanup removed the externals folders until you run the next update, and the switch did not like that...
 
 ## Conclusion
 
