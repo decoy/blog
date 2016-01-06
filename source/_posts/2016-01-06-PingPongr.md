@@ -1,9 +1,9 @@
 title: Introducing PingPongr
-date: 2015-01-05 20:00:00
+date: 2016-01-06 10:00:00
 tags: [web, PingPongr, Owin, DotNet]
 ---
 
-Over the break, I wanted to build a quick nutrition web app.  Like every project I start, my first task was to update everything to the latest, and try out as many new 'things' as possible.
+Over the break, I wanted to build a quick nutrition web app.
 
 My normal go-to framework for web applications is [Nancy](https://github.com/NancyFx/Nancy).  It's pretty lean and easy to get going, but... lately it's been feeling rather heavy.  It has a lot of features I never use (razor views, for instance), and I end up building out a good bit of bootstrap code to turn it all off and manually configure the bits I want.
 
