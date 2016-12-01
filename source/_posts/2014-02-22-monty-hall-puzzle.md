@@ -10,7 +10,7 @@ Wikipedia has an excellent article on the “probability puzzle” know as the M
 > http://en.wikipedia.org/wiki/Monty_Hall_problem
 
 It’s based around the concept of a game show where a contestant must pick one of three doors.  Behind one of the doors is the prize.  When the contestant picks the door, the host opens one of the other doors that doesn’t have the prize and then asks the contestant if they want to switch their choice.  The question: Do you switch or not? 
-
+<!-- more --> 
 > {% limg img/montyhall1.png title="Goat" %}
 
 At first, most people guess that it doesn’t matter.  There are two closed doors, so your chance must be 1:2 to guess correctly, right?  The correct answer:  You should always switch.

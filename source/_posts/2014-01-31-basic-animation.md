@@ -6,7 +6,7 @@ tags: [javascript, web, codepen, animation]
 In my day job, I spend a lot of time coding core business logic applications.  What do you do with data A in situation B kind of logic.  So when I work on something code related in my off time, I like to putz with technologies outside of that bubble.
 
 With that in mind, I'm going to talk about animation.
-
+<!-- more --> 
 ## Old School
 
 Back in "the day", many games just updated as fast as the CPU could.  If you loaded the same game on a faster computer, everything would move faster.  This could result in fun times likes a typing game where the game's "40 words per minute" was closer to 120. (I regularly scored 14!)

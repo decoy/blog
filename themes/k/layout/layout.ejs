@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <%- partial('_partial/head') %>
-<body>
-   
+<%- partial('_partial/head') %>
+
+    <body>
 
 
-    <%- body %>
-    
-    <footer id="footer">
-    <%- partial('_partial/footer') %>
-    </footer>
-    <%- partial('_partial/after_all') %>
-</body>
+        <div class="main">
+            <div class="container">
+                <%- body %>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <%- partial('_partial/footer') %>
+        </footer>
+        <%- partial('_partial/after_all') %>
+    </body>
+
+
+
 </html>

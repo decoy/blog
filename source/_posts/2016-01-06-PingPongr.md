@@ -8,7 +8,7 @@ Over the break, I wanted to build a quick nutrition web app.
 My normal go-to framework for web applications is [Nancy](https://github.com/NancyFx/Nancy).  It's pretty lean and easy to get going, but... lately it's been feeling rather heavy.  It has a lot of features I never use (razor views, for instance), and I end up building out a good bit of bootstrap code to turn it all off and manually configure the bits I want.
 
 So... what to do...
-
+<!-- more --> 
 ## MediatR
 
 Recently, I discovered [MediatR](https://github.com/jbogard/MediatR).  At its simplest, it sends a request through a handler that returns a response.
@@ -237,7 +237,7 @@ A few things to note:
 
 Over all, the library ended up quite lean and an easy read if you're curious about the inner workings.  The Tests and Sandbox example projects should also help.
 
-#### Future
+## Future
 
 The package is still currently marked as pre-release until it's seen some real world use.  At the very least, the default JSON implementation needs some tweaks to check a broader range of request media types.
 

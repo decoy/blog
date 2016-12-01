@@ -1,14 +1,12 @@
-<article class="hero card">
-
-    <div class="photo"></div>
-    <div class="me-info">
-        <h1>Kellen Piffner</h1>
-        <p>A software guy.</p>
-        <%- partial('_partial/shareicons') %>
-        <p>A software guy.</p>
-
-        <div>
-            <a href="#" class="btn btn-a">Contact Me!</a>
+<header class="page-header">
+    <div class="row page-header-title">
+        <h1 class="col c7"><%= config.title %></h1>
+        <div class="col c5 page-right-col">
+             <%- partial('_partial/shareicons') %>
         </div>
     </div>
-</article>
+</header>
+
+<p class="hero-blurb">
+    I create software. If you're interested in that kind of thing, <a href="#">contact me</a>!
+</p>

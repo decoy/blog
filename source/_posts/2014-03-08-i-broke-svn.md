@@ -4,7 +4,7 @@ tags: [svn, development]
 ---
 
 This week I accidentally broke SVN.  Or, more appropriately, SVN broke me.
-
+<!-- more --> 
 We recently moved a folder from a project to a shared location and setup an [svn external](http://svnbook.red-bean.com/en/1.0/ch07s03.html) to point to this new location.
 
 Steps taken:

@@ -1,33 +1,46 @@
-<article class="card ghost <%= item.layout %>">
-   
-
-    <header>
-
-        <%- partial('post/title') %>
-
+<article class="<%= item.layout %>">
+    <header class="article-header">
+        <div class="row article-title">
+            <h1 class="col c9"><%= item.title %></h1>
+            <div class="col c3 page-right-col">
+                <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span> ^</a>
+            </div>
+        </div>
+        <time pubdate datetimes="<%- item.date.toISOString() %>">
+            <h4><%- item.date.format("DD MMM YYYY") %></h4>
+        </time>
+        <div class="tags">
+             <%- partial('post/tag') %>
+        </div>
     </header>
-
-     <div class="article-date">
-        <p class="article-month"><%- item.date.format("DD MMM YYYY") %></p>
-    </div>
 
     <div class="article-entry">
         <% if (item.excerpt && index){ %>
-        <%- item.excerpt %>
-        <% } else { %>
-        <%- item.content %>
-        <% } %>
+            <%- item.excerpt %>
+                <% } else { %>
+                    <%- item.content %>
+                        <% } %>
     </div>
 
     <footer>
-        <div class="article-tags">
-            <%- partial('post/tag') %>
-        </div>
-        
-        <% if (!index){ %>
-        <div class="article-author">Posted by <%- config.author %><br />  <%- item.date.toISOString() %></div>
-        <%- partial('comment') %>
-        <% } %>
+       <%- partial('comment') %>
     </footer>
 </article>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<% if (config.disqus_shortname){ %>
+<script type="text/javascript">
+
+var disqus_shortname = '<%= config.disqus_shortname %>';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<% } %>

@@ -12,7 +12,7 @@ With that in mind:
 I really like typescript and the vision it has for the 'future' of javascript.  It gives us a preview of the actual future of javascript in a way that can be used today.  (See the wikipedia article: http://en.wikipedia.org/wiki/TypeScript#ECMAScript_6_support).
 
 And specifically, it gives us 'typing'.  The typing is what allows your IDE to do advanced things like safely change the name of a function everywhere it's used in your code.  It allows you to start typing a method name and get the documentation and full list of parameters expected.  You would be amazed how much time it can save you when you don't have to open up the source code to a library to figure out how to use it.
-
+<!-- more --> 
 ## Visual Studio
 
 Typescript is developed by Microsoft.  Because of this, it has brilliant integration in Microsoft's Visual Studio.  (If you haven't used Typescript with Visual Studio in awhile, give it another shot.  A lot of the quirks have been worked out.)

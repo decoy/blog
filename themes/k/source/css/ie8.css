@@ -1,23 +1,8 @@
-﻿.symbol {
-    font-size: 20px;
+﻿.social-symbol {
     font-family: monospace;
+    font-size: 12px !important;
 }
 
-    .symbol:after {
-        content: attr(title) " ";
+    .social-symbol:after {
+        content: attr(title);
     }
-
-.post:after {
-    content: "";
-    display: block;
-    margin-top: 5px;
-    height: 1px;
-    background-color: #3CA2A2;
-}
-
-.unsupported-browser{
-    background-color: #ff00dc;
-    color: #000;
-    padding: 10px;
-}
-

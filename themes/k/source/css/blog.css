@@ -1,92 +1,8 @@
-/* general stylings */
-
-body {
-    background-color: #eee;
-    color: #333;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    color: #215A6D;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-a:hover {
-    color: #3CA2A2;
-}
-
-blockquote {
-    border-left: #edece4 0.6em solid;
-    padding: 0 1.6em 0 1.6em;
-}
-
-
-/* page sections */
-
-footer {
-    border-top: 1px solid #ccc;
-}
-
-#header {
-    background-color: #2D2D29;
-    color: #fff;
-    text-align: center;
-}
-
-#header:after {
-    content: "";
-    display: block;
-    height: 20px;
-    border-top: 20px solid #215A6D;
-    background-color: #3CA2A2;
-    border-bottom: 20px solid #92C7A3;
-}
-
-#header a {
-    color: #fff;
-}
-
-#header a:hover {
-    color: #3CA2A2;
-}
-
-#footer {
-    text-align: right;
-}
-
-#footer:before {
-    content: "";
-    display: block;
-    height: 20px;
-    border-top: 20px solid #3CA2A2;
-    background-color: #215A6D;
-}
-
-.pagination {
-    vertical-align: central;
-    text-align: center;
-    background-color: #fff;
-    border-top: 1px dotted #efefef;
-}
-
-.pagination a {
-    display: inline-block;
-    background-color: #efefef;
-    padding: 10px;
-    margin: 2px;
-    border-radius: 10px;
-}
-
-.card {
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
-}
-
-
 /* share links */
+
+.clearfix {
+    clear: both;
+}
 
 @font-face {
     font-family: 'Mono Social Icons Font';
@@ -99,11 +15,7 @@ footer {
 
 .social-symbol {
     font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 a.social-symbol {
@@ -111,202 +23,194 @@ a.social-symbol {
 }
 
 
-/* heroes */
+/* base styles */
 
-.hero {
-    margin: 10%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #505050;
+    background-color: #21180d;
 }
 
-
-/* article colors */
-
-article.post {
-    margin: 10%;
-    padding: 10px 20px 50px;
-    background-color: #fff;
+a {
+    text-decoration: none;
+    color: #bf3211;
 }
 
-.post {
-    background-color: #FFFFFF;
-}
-
-.post header {}
-
-.post .article-tags {
-    margin-top: 50px;
-    font-size: 14px;
-}
-
-.post .article-author {
-    font-size: 14px;
-}
-
-.article-entry p {
-    text-align: justify;
-    margin: 1.6em;
-}
-
-.post .article-tags .article-tag {
-    display: inline-block;
-    padding: 5px;
-    border-radius: 50px;
-    background-color: #efefef;
-}
-
-
-/*
-.article-date {
-    background-color: #fff;
-    text-align: center;
-    opacity: 1 !important;
-}
-
-.article-date .article-day {
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 1.75em;
-    border-bottom: 1px dotted #efefef;
-    color: #222;
-}*/
-
-#comment {
-    margin-top: 100px;
-    padding-top: 20px;
-    border-top: 1px dotted #efefef;
-}
-
-
-/* ghost it */
-
-.ghost {
-    opacity: 0;
+a:hover {
+    color: #f0efd1;
+    background-color: #bf3211;
     -webkit-transition: .5s;
     transition: .5s;
 }
 
-.ghost:first-of-type {
-    opacity: 1;
+::selection {
+    /*background: #fe6;*/
+    background: #FFDB58;
 }
 
-.ghost-in {
-    opacity: 1;
+h1, h2, h3, h4 {
+    margin: 0 0 0.5em 0;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #000;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+    color: #787878;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.625;
+    margin: 0 0 1em 0;
+}
+
+blockquote {
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border-left: .25rem solid #eceeef;
 }
 
 
-/* code highlighting */
+/* containers */
 
-.article-entry pre, .article-entry .highlight {
-    background: #2d2d2d;
-    margin: 0 -20px;
-    padding: 15px 20px;
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 1px 0;
-    overflow: auto;
-    color: #ccc;
-    line-height: 22.400000000000002px;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-.article-entry .highlight .gutter pre, .article-entry .gist .gist-file .gist-data .line-numbers {
-    color: #666;
-    font-size: 0.85em;
+.main {
+    background-color: #fff;
+    padding: 0 00 2em 0;
 }
 
-.article-entry pre, .article-entry code {
-    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+@media (min-width: 871px) {
+    .page-right-col {
+        text-align: right;
+    }
 }
 
-.article-entry code {
-    background: #eee;
-    text-shadow: 0 1px #fff;
-    padding: 0 0.3em;
-}
 
-.article-entry pre code {
-    background: none;
-    text-shadow: none;
-    padding: 0;
-}
+/* page headers */
 
-.article-entry .highlight pre {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.article-entry .highlight table {
-    margin: 0;
-    width: auto;
-}
-
-.article-entry .highlight td {
-    border: none;
-    padding: 0;
-}
-
-.article-entry .highlight figcaption {
-    font-size: 0.85em;
-    color: #999;
-    line-height: 1em;
+.page-header {
+    padding: 1em 0 0 0;
     margin-bottom: 1em;
 }
 
-.article-entry .highlight figcaption:before, .article-entry .highlight figcaption:after {
-    content: "";
-    display: table;
+.page-header-title {
+    padding: 0px;
+    border-bottom: 1px solid #d9dcdd;
 }
 
-.article-entry .highlight figcaption:after {
-    clear: both;
+
+/* page footers */
+
+.page-footer {
+    background-color: #21180d;
+    color: #f9f8cc;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em 0;
 }
 
-.article-entry .highlight figcaption a {
-    float: right;
-}
-
-.article-entry .highlight .gutter pre {
+.page-footer-social {
     text-align: right;
+}
+
+.page-footer a {
+    color: #f9f8cc;
+}
+
+
+/* hero (main page header) */
+
+.hero-blurb {
+    padding: 0 0 1em 0;
+    font-size: 1.5em;
+    border-bottom: 3px solid #d9dcdd;
+}
+
+
+/* articles styles (main page article summaries) */
+
+.articles-nav {
+    font-weight: 900;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.articles-nav-right {
+    text-align: right;
+}
+
+.article-short {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d9dcdd;
+}
+
+.article-short-header {
     padding-right: 20px;
 }
 
-.article-entry .highlight .line {
-    height: 22.400000000000002px;
+
+/* post/article pages */
+
+.article-title {
+    border-bottom: 1px solid #d9dcdd;
 }
 
-.article-entry .highlight .line.marked {
-    background: #515151;
+.article-header {
+    border-bottom: 3px solid #d9dcdd;
+    padding: 1em 0;
+    margin-bottom: 2em;
 }
 
-pre .comment, pre .title {
-    color: #999;
+.backlink:hover .backlink-details {
+    display: inline;
 }
 
-pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
-    color: #f2777a;
+.backlink-details {
+    display: none;
 }
 
-pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
-    color: #f99157;
+.article-entry {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #d9dcdd;
 }
 
-pre .class, pre .ruby .class .title, pre .css .rules .attribute {
-    color: #9c9;
+.tags a {
+    background-color: #b4b4b4;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 2.25;
 }
 
-pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
-    color: #9c9;
+.tags a:hover {
+    background-color: #000;
+    color: #fff;
 }
-
-pre .css .hexcolor {
-    color: #6cc;
-}
-
-pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
-    color: #69c;
-}
-
-pre .keyword, pre .javascript .function {
-    color: #c9c;
-}
-
-

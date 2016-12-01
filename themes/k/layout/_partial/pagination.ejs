@@ -1,9 +1,12 @@
-<div class="pagination">
-    <% if (page.prev){ %>
-    <a href="<%- config.root %><%- page.prev_link %>">Newer</a>
-    <% } %>
-    <% if (page.next){ %>
-    <a href="<%- config.root %><%- page.next_link %>">Older</a>
-    <% } %>
-</div>
-
+<nav class="articles-nav row">
+    <div class="col c6">
+        <% if (page.prev){ %>
+            <a href="<%- config.root %><%- page.prev_link %>">< Newer Entries </a>
+        <% } %>
+    </div>
+    <div class="col c6">
+        <% if (page.next){ %>
+            <a href="<%- config.root %><%- page.next_link %>">Older Entries ></a>
+        <% } %>
+    </div>
+</nav>
