@@ -41,8 +41,8 @@ a {
 a:hover {
     color: #f0efd1;
     background-color: #bf3211;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 ::selection {
@@ -51,7 +51,6 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-    margin: 0 0 0.5em 0;
     font-weight: 900;
 }
 
@@ -79,7 +78,6 @@ h4 {
 
 p {
     line-height: 1.625;
-    margin: 0 0 1em 0;
 }
 
 blockquote {
@@ -103,9 +101,18 @@ blockquote {
     padding: 0 00 2em 0;
 }
 
+.row {
+    margin: 0;
+}
+
 @media (min-width: 871px) {
-    .page-right-col {
+    /* only align right when in a column */
+    .col-right {
         text-align: right;
+    }
+    /* fill the empty div when in a column */
+    .col-fill {
+        min-height: 1px;
     }
 }
 
@@ -113,41 +120,29 @@ blockquote {
 /* page headers */
 
 .page-header {
-    padding: 1em 0 0 0;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.page-header h1, .page-header h4 {
+    margin: 0;
 }
 
 .page-header-title {
-    padding: 0px;
+    padding: 1em 0;
     border-bottom: 1px solid #d9dcdd;
 }
 
-
-/* page footers */
-
-.page-footer {
-    background-color: #21180d;
-    color: #f9f8cc;
-    font-size: 2em;
-    margin: 0;
+.page-subheader {
     padding: 1em 0;
-}
-
-.page-footer-social {
-    text-align: right;
-}
-
-.page-footer a {
-    color: #f9f8cc;
+    border-bottom: 3px solid #d9dcdd;
 }
 
 
 /* hero (main page header) */
 
 .hero-blurb {
-    padding: 0 0 1em 0;
     font-size: 1.5em;
-    border-bottom: 3px solid #d9dcdd;
+    margin: 0;
 }
 
 
@@ -159,20 +154,19 @@ blockquote {
     text-transform: uppercase;
 }
 
-.articles-nav-right {
-    text-align: right;
-}
-
 .article-short {
     margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid #d9dcdd;
 }
 
-.article-short-header {
-    padding-right: 20px;
+.article-short-header h2 {
+    margin: 0.5em 0;
 }
 
+.article-short-content {
+    padding-left: 2em;
+}
 
 /* post/article pages */
 
@@ -213,4 +207,19 @@ blockquote {
 .tags a:hover {
     background-color: #000;
     color: #fff;
+}
+
+
+/* page footers */
+
+.page-footer {
+    background-color: #21180d;
+    color: #f9f8cc;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.page-footer a {
+    color: #f9f8cc;
 }

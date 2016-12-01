@@ -1,16 +1,22 @@
 <article class="<%= item.layout %>">
-    <header class="article-header">
-        <div class="row article-title">
-            <h1 class="col c9"><%= item.title %></h1>
-            <div class="col c3 page-right-col">
+    <header class="page-header">
+        <div class="row page-header-title">
+            <h1 class="col c9">
+                <%= item.title %>
+            </h1>
+            <div class="col c3 col-right">
                 <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span> ^</a>
             </div>
         </div>
-        <time pubdate datetimes="<%- item.date.toISOString() %>">
-            <h4><%- item.date.format("DD MMM YYYY") %></h4>
-        </time>
-        <div class="tags">
-             <%- partial('post/tag') %>
+        <div class="page-subheader">
+            <time pubdate datetimes="<%- item.date.toISOString() %>">
+                <h4>
+                    <%- item.date.format("DD MMM YYYY") %>
+                </h4>
+            </time>
+            <div class="tags">
+                <%- partial('post/tag') %>
+            </div>
         </div>
     </header>
 
@@ -23,7 +29,7 @@
     </div>
 
     <footer>
-       <%- partial('comment') %>
+        <%- partial('comment') %>
     </footer>
 </article>
 
@@ -31,7 +37,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 
 <% if (config.disqus_shortname){ %>
-<script type="text/javascript">
+    <script type="text/javascript">
 
 var disqus_shortname = '<%= config.disqus_shortname %>';
 
@@ -43,4 +49,4 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
-<% } %>
+    <% } %>
