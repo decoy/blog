@@ -9,12 +9,11 @@ My normal go-to framework for web applications is [Nancy](https://github.com/Nan
 
 So... what to do...
 
-
-##MediatR
+## MediatR
 
 Recently, I discovered [MediatR](https://github.com/jbogard/MediatR).  At its simplest, it sends a request through a handler that returns a response.
 
-```C#
+``` csharp
 public class Ping : IRequest<string> { }
 
 public class PingHandler : IRequestHandler<Ping, string> {
@@ -25,7 +24,8 @@ public class PingHandler : IRequestHandler<Ping, string> {
 ```
 
 You use the above handler like so:
-```C#
+
+``` csharp
 var pong = mediator.Send(new Ping());  //returns "Pong"
 ```
 
@@ -33,7 +33,7 @@ What's interesting about MediatR is all the configuration magic happens at your 
 
 And infrastructure and other concerns can be moved to decorators that your original code never has to know about:
 
-```C#
+``` csharp
 public class LoggingDecorator<TRequest, TResponse>
     : IRequestHandler<TRequest, TResponse>
     where TRequest : IRequest<TResponse>
@@ -72,7 +72,7 @@ If you've worked with nodejs for a web app, you're probably familiar with their 
 
 The quickest way to get going with Owin is to use the Microsoft's Owin nuget packages.  They provide a light layer on top of the base Owin requests api and server packages.  Here's an empty, self hosted web server:
 
-```C#
+``` csharp
 using Owin;
 using System;
 
@@ -101,7 +101,8 @@ public class Program
 If you run this example, you'll see it doesn't really do anything.  Any request you run against the server will just come back 404 not found.
 
 So, let's add something to the Configuration function:
-```C#
+
+``` csharp
 app.Use(async (context, next) =>
 {
    Console.WriteLine("Something is happening!");
@@ -116,7 +117,8 @@ So... what's going on?
 The app.Use call is defining an async function that runs when a request comes in.  Each request will go through that function.  You can have multiple 'Use' functions that are called in order when a request comes in, with each one calling the "next()" function in the pipeline.  The context passed contains the information about the request - the headers, the content and response streams - all the normal things you'd expect from a web request.
 
 Let's add another, more complicated middleware that actually does something:
-```C#
+
+``` csharp
 app.Use(async (context, next) =>
 {
     if (context.Request.Path.StartsWithSegments(new PathString("/hello")))
@@ -142,7 +144,7 @@ The PingPongr nuget package has only one dependency: the core Owin package.
 
 Here's an example API that should look pretty familiar after seeing the earlier mediator code:
 
-```C#
+``` csharp
 using PingPongr;
 using System.Threading;
 using System.Threading.Tasks;
@@ -170,7 +172,7 @@ public class PingHandler : IRouteRequestHandler<Ping, Pong>
 
 And finally, a functional, self hosted example using SimpleInjector for the container.
 
-```C#
+``` csharp
 using Owin;
 using PingPongr;
 using PingPongr.OwinSupport;

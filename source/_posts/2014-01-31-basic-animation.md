@@ -18,7 +18,7 @@ Here's an example running 10fps, 30fps, and 60fps while drawing a simple animati
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 The ball object handles the 'bounce' effect.
-```javascript
+``` javascript
 function Ball(w, h) {
 
   //let's just set this to 10 for now
@@ -59,7 +59,7 @@ Ball.prototype.draw = function(ctx) {
 
 In our main draw loop you can see us updating both the ball position, and then telling it to draw.
 
-```javascript
+``` javascript
 BallCanvas.prototype.animate = function () {
   
   //clear the canvas between frames
@@ -90,7 +90,7 @@ So what other options are there?  Well, you could calculate the distance the bal
 Let's assume we want the ball to update position every 10ms (100fps from the previous example).  Instead of simply updating the ball +1 on each frame, we now get the time, compare it to the previous time, and figure out how many times the ball should have moved since the last time we updated.
 
 This is the new animate function:
-```javascript
+``` javascript
 BallCanvas.prototype.animate = function () {
 
   //get the current time
@@ -130,7 +130,7 @@ And this is it running:
 
 Now, the side of me that spends all day separating business logic from infrastructure code keeps asking why I'm calculating positions inside of a draw loop.  Separation of concerns is a big deal in large software projects. This brings me to the next option: have a loop just for updating.
 
-```javascript
+``` javascript
 BallCanvas.prototype.animate = function () {
 
   //clear the canvas between frames
@@ -144,7 +144,7 @@ BallCanvas.prototype.animate = function () {
 };
 ```
 
-```javascript
+``` javascript
 //handle the object updates separate from drawing
 function updateBalls() {
   ball10.ball.update();
@@ -164,7 +164,7 @@ The same results, but note the math is gone, and the code is overall simpler.  T
 
 Neat!  All we did was replace our update loop from the previous example with this:
 
-```javascript
+``` javascript
 function onMouseMove(e) {
 
   //get the new positions

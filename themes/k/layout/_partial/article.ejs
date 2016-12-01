@@ -1,14 +1,15 @@
-<article class="ghost <%= item.layout %>">
-    <div class="article-date">
-        <p class="article-day"><%- item.date.format("DD") %></p>
-        <p class="article-month"><%- item.date.format("MMM YYYY") %></p>
-    </div>
+<article class="card ghost <%= item.layout %>">
+   
 
     <header>
 
         <%- partial('post/title') %>
 
     </header>
+
+     <div class="article-date">
+        <p class="article-month"><%- item.date.format("DD MMM YYYY") %></p>
+    </div>
 
     <div class="article-entry">
         <% if (item.excerpt && index){ %>

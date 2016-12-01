@@ -29,7 +29,7 @@ By default, Visual Studio will even generate a map file for you that tells debug
 
 
 Why?  Well, this the feature exists to make it easier to 'debug' your javascript, but when your typescript looks like this:
-```javascript
+``` javascript
 class Greeter {
     element: HTMLElement;
     span: HTMLElement;
@@ -55,7 +55,7 @@ class Greeter {
 ```
 
 and your javascript output looks like this:
-```javascript
+``` javascript
 var Greeter = (function () {
     function Greeter(element) {
         this.element = element;

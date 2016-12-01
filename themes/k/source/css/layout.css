@@ -16,28 +16,4 @@ article, header {
    
 }
 
-p {
-    margin: 0px;
-}
-
-article .article-tags {
-
-}
-
-article.post{
-    
-}
-
-
-article .article-date {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    
-    position: relative;
-    margin-top: -50px;
-    margin-left: -50px;
-    left: 50%;
-
-}
 
