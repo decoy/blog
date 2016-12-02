@@ -90,6 +90,7 @@ So what other options are there?  Well, you could calculate the distance the bal
 Let's assume we want the ball to update position every 10ms (100fps from the previous example).  Instead of simply updating the ball +1 on each frame, we now get the time, compare it to the previous time, and figure out how many times the ball should have moved since the last time we updated.
 
 This is the new animate function:
+
 ``` javascript
 BallCanvas.prototype.animate = function () {
 
