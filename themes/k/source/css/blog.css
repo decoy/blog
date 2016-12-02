@@ -25,9 +25,18 @@ a.social-symbol {
 
 /* base styles */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-size: 17px;
     font-family: sans-serif;
     color: #505050;
     background-color: #21180d;
@@ -168,6 +177,7 @@ blockquote {
     padding-left: 2em;
 }
 
+
 /* post/article pages */
 
 .article-title {
@@ -225,132 +235,187 @@ blockquote {
 }
 
 
+/* form styles */
+
+label > * {
+    display: inline;
+}
+
+form > * {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea, input, select {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+textarea:focus, input:focus, select:focus {
+    border-color: #bf3211;
+}
+
+textarea, input[type=text] {
+    -webkit-appearance: none;
+    /* make iOS inputs pretty */
+    width: 100%;
+    outline: 0;
+}
+
+.addon {
+    box-shadow: 0 0 0 1px #ccc;
+    padding: 8px 12px;
+}
+
+input, textarea, .article-entry input {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    margin: 1em 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+}
+
+
+/*.article-entry form {
+    background: #21180d;
+    padding: 1em;
+}*/
+
+input[type=submit] {
+    color: #f0efd1;
+    background-color: #bf3211;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #f0efd1;
+    background-color: #21180d;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+textarea {
+    min-height: 200px;
+}
+
 
 /* highlighting styles */
 
-.article-entry pre,
-.article-entry .highlight {
-  background: #21180d;
-  margin: 0 -20px;
-  padding: 15px 20px;
-  border-style: solid;
-  border-color: #ddd;
-  border-width: 1px 0;
-  overflow: auto;
-  color: #ccc;
-  line-height: 22.400000000000002px;
+.article-entry pre, .article-entry .highlight {
+    background: #21180d;
+    margin: 0 -20px;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 22.400000000000002px;
 }
+
 .article-entry .highlight .gutter pre {
-  color: #666;
-  font-size: 0.85em;
+    color: #666;
+    font-size: 0.85em;
 }
-.article-entry pre,
+
+.article-entry pre, .article-entry code {
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
 .article-entry code {
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    background: #eee;
+    text-shadow: 0 1px #fff;
+    padding: 0 0.3em;
 }
-.article-entry code {
-  background: #eee;
-  text-shadow: 0 1px #fff;
-  padding: 0 0.3em;
-}
+
 .article-entry pre code {
-  background: none;
-  text-shadow: none;
-  padding: 0;
+    background: none;
+    text-shadow: none;
+    padding: 0;
 }
+
 .article-entry .highlight pre {
-  border: none;
-  margin: 0;
-  padding: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
+
 .article-entry .highlight table {
-  margin: 0;
-  width: auto;
+    margin: 0;
+    width: auto;
 }
+
 .article-entry .highlight td {
-  border: none;
-  padding: 0;
+    border: none;
+    padding: 0;
 }
+
 .article-entry .highlight figcaption {
-  font-size: 0.85em;
-  color: #999;
-  line-height: 1em;
-  margin-bottom: 1em;
+    font-size: 0.85em;
+    color: #999;
+    line-height: 1em;
+    margin-bottom: 1em;
 }
-.article-entry .highlight figcaption:before,
+
+.article-entry .highlight figcaption:before, .article-entry .highlight figcaption:after {
+    content: "";
+    display: table;
+}
+
 .article-entry .highlight figcaption:after {
-  content: "";
-  display: table;
+    clear: both;
 }
-.article-entry .highlight figcaption:after {
-  clear: both;
-}
+
 .article-entry .highlight figcaption a {
-  float: right;
+    float: right;
 }
+
 .article-entry .highlight .gutter pre {
-  text-align: right;
-  padding-right: 20px;
+    text-align: right;
+    padding-right: 20px;
 }
+
 .article-entry .highlight .line {
-  height: 22.400000000000002px;
+    height: 22.400000000000002px;
 }
+
 .article-entry .highlight .line.marked {
-  background: #515151;
+    background: #515151;
 }
-pre .comment,
-pre .title {
-  color: #999;
+
+pre .comment, pre .title {
+    color: #999;
 }
-pre .variable,
-pre .attribute,
-pre .tag,
-pre .regexp,
-pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
-  color: #f2777a;
+
+pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+    color: #f2777a;
 }
-pre .number,
-pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
-pre .constant {
-  color: #f99157;
+
+pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+    color: #f99157;
 }
-pre .class,
-pre .ruby .class .title,
-pre .css .rules .attribute {
-  color: #9c9;
+
+pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+    color: #9c9;
 }
-pre .string,
-pre .value,
-pre .inheritance,
-pre .header,
-pre .ruby .symbol,
-pre .xml .cdata {
-  color: #9c9;
+
+pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+    color: #9c9;
 }
+
 pre .css .hexcolor {
-  color: #6cc;
+    color: #6cc;
 }
-pre .function,
-pre .python .decorator,
-pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
-pre .perl .sub,
-pre .javascript .title,
-pre .coffeescript .title {
-  color: #69c;
+
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+    color: #69c;
 }
-pre .keyword,
-pre .javascript .function {
-  color: #c9c;
+
+pre .keyword, pre .javascript .function {
+    color: #c9c;
 }
