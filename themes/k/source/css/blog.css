@@ -208,6 +208,13 @@ blockquote {
     border-bottom: 3px solid #d9dcdd;
 }
 
+.page-header-title h1 a {
+    color: #000;
+}
+
+.page-header-title h1 a:hover {
+    color: #f0efd1;
+}
 
 /* hero (main page header) */
 
@@ -264,12 +271,12 @@ blockquote {
     display: none;
 }
 
-.article-entry {
+.post .article-entry {
     margin-bottom: 3em;
     border-bottom: 1px solid #d9dcdd;
 }
 
-.tags a {
+.tags a, .tag {
     background-color: #b4b4b4;
     border-radius: 3px;
     color: #fff;

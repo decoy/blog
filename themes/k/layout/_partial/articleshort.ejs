@@ -3,7 +3,7 @@
         <div class="col c4">
             <header class="article-short-header">
                 <h2>
-                    <a href="<%- config.root %><%- item.path %>">
+                    <a href="<%- url_for(item.path) %>">
                         <%= item.title %>
                     </a>
                 </h2>
@@ -20,7 +20,7 @@
         <div class="col c8">
             <section class="article-short-content">
                 <%- item.excerpt %>
-                    <p><a href="<%- config.root %><%- item.path %>">Read More ></a></p>
+                    <p><a href="<%- url_for(item.path) %>">Read More ></a></p>
             </section>
         </div>
     </div>
