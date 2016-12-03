@@ -1,0 +1,28 @@
+<article class=" article-short">
+    <div class="row">
+        <div class="col c4">
+            <header class="article-short-header">
+                <h2>
+                    <a href="<%- url_for(item.path) %>">
+                        <%= item.title %>
+                    </a>
+                </h2>
+                <time pubdate datetimes="<%- item.date.toISOString() %>">
+                    <h4>
+                        <%- item.date.format("DD MMM YYYY") %>
+                    </h4>
+                </time>
+                <div class="tags">
+                    <%- partial('tags') %>
+                </div>
+            </header>
+        </div>
+        <div class="col c8">
+            <section class="article-short-content">
+                <%- item.excerpt %>
+                    <p><a href="<%- url_for(item.path) %>">Read More ></a></p>
+            </section>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</article>

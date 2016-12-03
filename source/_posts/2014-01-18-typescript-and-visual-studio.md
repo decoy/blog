@@ -9,6 +9,8 @@ With that in mind:
 
 >[Typescript](http://www.typescriptlang.org) is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
 
+<!-- more --> 
+
 I really like typescript and the vision it has for the 'future' of javascript.  It gives us a preview of the actual future of javascript in a way that can be used today.  (See the wikipedia article: http://en.wikipedia.org/wiki/TypeScript#ECMAScript_6_support).
 
 And specifically, it gives us 'typing'.  The typing is what allows your IDE to do advanced things like safely change the name of a function everywhere it's used in your code.  It allows you to start typing a method name and get the documentation and full list of parameters expected.  You would be amazed how much time it can save you when you don't have to open up the source code to a library to figure out how to use it.
@@ -29,7 +31,7 @@ By default, Visual Studio will even generate a map file for you that tells debug
 
 
 Why?  Well, this the feature exists to make it easier to 'debug' your javascript, but when your typescript looks like this:
-```javascript
+``` javascript
 class Greeter {
     element: HTMLElement;
     span: HTMLElement;
@@ -55,7 +57,7 @@ class Greeter {
 ```
 
 and your javascript output looks like this:
-```javascript
+``` javascript
 var Greeter = (function () {
     function Greeter(element) {
         this.element = element;

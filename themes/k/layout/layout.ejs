@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <%- partial('_partial/head') %>
+<%- partial('_partial/head') %>
 <body>
-    <header id="header">
-    <%- partial('_partial/header') %>
-    </header>
-
-    <%- body %>
-    
-    <footer id="footer">
+    <div class="main">
+        <div class="container">
+            <%- body %>
+        </div>
+    </div>
     <%- partial('_partial/footer') %>
-    </footer>
-    <%- partial('_partial/after_all') %>
+    <%- partial('_partial/browserwarning') %>
 </body>
 </html>

@@ -6,7 +6,7 @@ tags: [javascript, web, codepen, animation]
 In my day job, I spend a lot of time coding core business logic applications.  What do you do with data A in situation B kind of logic.  So when I work on something code related in my off time, I like to putz with technologies outside of that bubble.
 
 With that in mind, I'm going to talk about animation.
-
+<!-- more --> 
 ## Old School
 
 Back in "the day", many games just updated as fast as the CPU could.  If you loaded the same game on a faster computer, everything would move faster.  This could result in fun times likes a typing game where the game's "40 words per minute" was closer to 120. (I regularly scored 14!)
@@ -18,7 +18,7 @@ Here's an example running 10fps, 30fps, and 60fps while drawing a simple animati
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
 The ball object handles the 'bounce' effect.
-```javascript
+``` javascript
 function Ball(w, h) {
 
   //let's just set this to 10 for now
@@ -59,7 +59,7 @@ Ball.prototype.draw = function(ctx) {
 
 In our main draw loop you can see us updating both the ball position, and then telling it to draw.
 
-```javascript
+``` javascript
 BallCanvas.prototype.animate = function () {
   
   //clear the canvas between frames
@@ -90,7 +90,8 @@ So what other options are there?  Well, you could calculate the distance the bal
 Let's assume we want the ball to update position every 10ms (100fps from the previous example).  Instead of simply updating the ball +1 on each frame, we now get the time, compare it to the previous time, and figure out how many times the ball should have moved since the last time we updated.
 
 This is the new animate function:
-```javascript
+
+``` javascript
 BallCanvas.prototype.animate = function () {
 
   //get the current time
@@ -130,7 +131,7 @@ And this is it running:
 
 Now, the side of me that spends all day separating business logic from infrastructure code keeps asking why I'm calculating positions inside of a draw loop.  Separation of concerns is a big deal in large software projects. This brings me to the next option: have a loop just for updating.
 
-```javascript
+``` javascript
 BallCanvas.prototype.animate = function () {
 
   //clear the canvas between frames
@@ -144,7 +145,7 @@ BallCanvas.prototype.animate = function () {
 };
 ```
 
-```javascript
+``` javascript
 //handle the object updates separate from drawing
 function updateBalls() {
   ball10.ball.update();
@@ -164,7 +165,7 @@ The same results, but note the math is gone, and the code is overall simpler.  T
 
 Neat!  All we did was replace our update loop from the previous example with this:
 
-```javascript
+``` javascript
 function onMouseMove(e) {
 
   //get the new positions

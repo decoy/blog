@@ -1,32 +1,33 @@
-<article class="ghost <%= item.layout %>">
-    <div class="article-date">
-        <p class="article-day"><%- item.date.format("DD") %></p>
-        <p class="article-month"><%- item.date.format("MMM YYYY") %></p>
-    </div>
-
-    <header>
-
-        <%- partial('post/title') %>
-
+<article class="<%= item.layout %>">
+    <header class="page-header">
+        <div class="row page-header-title">
+            <h1 class="col c9">
+                <%= item.title %>
+            </h1>
+            <div class="col c3 col-right">
+                <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span> ^</a>
+            </div>
+        </div>
+        <div class="page-subheader">
+            <time pubdate datetimes="<%- item.date.toISOString() %>">
+                <h4>
+                    <%- item.date.format("DD MMM YYYY") %>
+                </h4>
+            </time>
+            <div class="tags">
+                <%- partial('tags') %>
+            </div>
+        </div>
     </header>
 
     <div class="article-entry">
-        <% if (item.excerpt && index){ %>
-        <%- item.excerpt %>
-        <% } else { %>
         <%- item.content %>
-        <% } %>
     </div>
 
     <footer>
-        <div class="article-tags">
-            <%- partial('post/tag') %>
-        </div>
-        
-        <% if (!index){ %>
-        <div class="article-author">Posted by <%- config.author %><br />  <%- item.date.toISOString() %></div>
         <%- partial('comment') %>
-        <% } %>
     </footer>
 </article>
 
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->

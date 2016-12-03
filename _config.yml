@@ -3,7 +3,7 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: kellen.piffner.com
+title: 'kellen.piffner.com'
 subtitle: 
 description: Developer blogging about web technology, healthcare, and whatever else comes to mind.
 author: Kellen Piffner
@@ -57,7 +57,7 @@ tag: 2
 ## Hexo uses Connect as a server
 ## You can customize the logger format as defined in
 ## http://www.senchalabs.org/connect/logger.html
-port: 4000
+port: 4001
 logger: false
 logger_format:
 
@@ -84,7 +84,7 @@ exclude_generator:
 
 # Markdown
 ## https://github.com/chjj/marked
-markdown:
+marked:
   gfm: true
   pedantic: false
   sanitize: false

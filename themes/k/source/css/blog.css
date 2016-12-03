@@ -1,101 +1,9 @@
-/* fonts ahoy */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
-
-/* general stylings */
-
-body {
-    background-color: #2D2D29;
-    color: #2D2D29;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-}
-
-h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-rendering: optimizelegibility;
-}
-
-a {
-    text-decoration: none;
-    color: #215A6D;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-    a:hover {
-        color: #3CA2A2;
-    }
-
-blockquote {
-    border-left: #edece4 0.6em solid;
-    padding: 0 1.6em 0 1.6em;
-}
-
-
-/* page sections */
-
-#header {
-    background-color: #2D2D29;
-    color: #fff;
-    text-align: center;
-}
-
-    #header:after {
-        content: "";
-        display: block;
-        height: 20px;
-        border-top: 20px solid #215A6D;
-        background-color: #3CA2A2;
-        border-bottom: 20px solid #92C7A3;
-    }
-
-    #header a {
-        color: #fff;
-    }
-
-        #header a:hover {
-            color: #3CA2A2;
-        }
-
-#footer {
-    text-align: right;
-}
-
-    #footer:before {
-        content: "";
-        display: block;
-        height: 20px;
-        border-top: 20px solid #3CA2A2;
-        background-color: #215A6D;
-    }
-
-
-.pagination {
-    vertical-align: central;
-    text-align: center;
-    background-color: #fff;
-    border-top: 1px dotted #efefef;
-}
-
-    .pagination a {
-        display: inline-block;
-        background-color: #efefef;
-        padding: 10px;
-        margin: 2px;
-        border-radius: 10px;
-    }
-
-
-
-
 /* share links */
+
+.clearfix {
+    clear: both;
+}
+
 @font-face {
     font-family: 'Mono Social Icons Font';
     src: url('../fonts/MonoSocialIconsFont-1.10/MonoSocialIconsFont-1.10.eot');
@@ -107,11 +15,7 @@ blockquote {
 
 .social-symbol {
     font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 a.social-symbol {
@@ -119,171 +23,467 @@ a.social-symbol {
 }
 
 
+/* base styles */
 
-/* article colors */
+html {
+    box-sizing: border-box;
+}
 
-article.post {
-    padding: 10px 10% 50px;
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #505050;
+    background-color: #21180d;
+}
+
+a {
+    text-decoration: none;
+    color: #bf3211;
+}
+
+a:hover {
+    color: #f0efd1;
+    background-color: #bf3211;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+::selection {
+    /*background: #fe6;*/
+    background: #FFDB58;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #000;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+    color: #787878;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.625;
+}
+
+blockquote {
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    border-left: .25rem solid #eceeef;
+}
+
+
+/* containers and grid */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.main {
     background-color: #fff;
+    padding: 0 00 2em 0;
 }
 
-.post {
-    background-color: #FFFFFF;
+@media (min-width: 871px) {
+    /* only align right when in a column */
+    .col-right {
+        text-align: right;
+    }
+    /* fill the empty div when in a column */
+    .col-fill {
+        min-height: 1px;
+    }
 }
 
-    .post header {
-    }
-
-    .post .article-tags {
-        margin-top: 50px;
-        font-size: 14px;
-    }
-
-    .post .article-author {
-        font-size: 14px;
-    }
-    
-
-    .article-entry p {
-        text-align:justify;
-        margin-bottom: 20px;
-    }
-
-
-    .post .article-tags .article-tag {
-        display: inline-block;
-        padding: 5px;
-        border-radius: 50px;
-        background-color: #efefef;
-    }
-
-    .post:nth-child(odd), .post:nth-child(odd) .article-date {
-        background-color: #efefef;
-    }
-
-        .post:nth-child(odd) .article-tag {
-            background-color: #fff;
-        }
-
-        .post:nth-child(odd) .article-date .article-day {
-            border-bottom: 1px dotted #fff;
-        }
-
-        .post:nth-child(odd) .article-date .article-day {
-            border-bottom: 1px dotted #fff;
-        }
-
-
-.article-date {
-    background-color: #fff;
-    text-align: center;
-    opacity: 1 !important;
+.row {
+    margin: 0;
+    overflow: auto;
 }
 
-    .article-date .article-day {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 1.75em;
-        border-bottom: 1px dotted #efefef;
-        color: #222;
-    }
-
-
-#comment {
-    margin-top: 100px;
-    padding-top: 20px;
-    border-top: 1px dotted #efefef;
+.col {
+    float: left;
 }
 
-
-/* ghost it */
-
-
-.ghost {
-    opacity: 0;
-    -webkit-transition: .5s;
-    transition: .5s;
+.table, .c12 {
+    width: 100%;
 }
 
-    .ghost:first-of-type {
-        opacity: 1;
-    }
+.c11 {
+    width: 91.66%;
+}
 
-.ghost-in {
-    opacity: 1;
+.c10 {
+    width: 83.33%;
+}
+
+.c9 {
+    width: 75%;
+}
+
+.c8 {
+    width: 66.66%;
+}
+
+.c7 {
+    width: 58.33%;
+}
+
+.c6 {
+    width: 50%;
+}
+
+.c5 {
+    width: 41.66%;
+}
+
+.c4 {
+    width: 33.33%;
+}
+
+.c3 {
+    width: 25%;
+}
+
+.c2 {
+    width: 16.66%;
+}
+
+.c1 {
+    width: 8.33%;
 }
 
 
+/* For smaller screens, change all columns to 100% width */
 
-/* Code section styles */
-
-pre, code {
-    font-family: "Source Code Pro", monospace;
-    border: 1px dotted #ccc;
-    padding: 2px;
-    white-space: pre;
+@media (max-width: 870px) {
+    .row .col {
+        width: 100%;
+    }
 }
 
-    pre .comment,
-    pre .title {
-        color: #999;
-    }
 
-    pre .variable,
-    pre .attribute,
-    pre .tag,
-    pre .regexp,
-    pre .ruby .constant,
-    pre .xml .tag .title,
-    pre .xml .pi,
-    pre .xml .doctype,
-    pre .html .doctype,
-    pre .css .id,
-    pre .css .class,
-    pre .css .pseudo {
-        color: #f2777a;
-    }
+/* page headers */
 
-    pre .number,
-    pre .preprocessor,
-    pre .built_in,
-    pre .literal,
-    pre .params,
-    pre .constant {
-        color: #f99157;
-    }
+.page-header {
+    margin-bottom: 2em;
+}
 
-    pre .class,
-    pre .ruby .class .title,
-    pre .css .rules .attribute {
-        color: #9c9;
-    }
+.page-header h1, .page-header h4 {
+    margin: 0;
+}
 
-    pre .string,
-    pre .value,
-    pre .inheritance,
-    pre .header,
-    pre .ruby .symbol,
-    pre .xml .cdata {
-        color: #9c9;
-    }
+.page-header-title {
+    padding: 1em 0;
+    border-bottom: 1px solid #d9dcdd;
+}
 
-    pre .css .hexcolor {
-        color: #6cc;
-    }
+.page-subheader {
+    padding: 1em 0;
+    border-bottom: 3px solid #d9dcdd;
+}
 
-    pre .function,
-    pre .python .decorator,
-    pre .python .title,
-    pre .ruby .function .title,
-    pre .ruby .title .keyword,
-    pre .perl .sub,
-    pre .javascript .title,
-    pre .coffeescript .title {
-        color: #69c;
-    }
+.page-header-title h1 a {
+    color: #000;
+}
 
-    pre .keyword,
-    pre .javascript .function {
-        color: #c9c;
-    }
+.page-header-title h1 a:hover {
+    color: #f0efd1;
+}
+
+/* hero (main page header) */
+
+.hero-blurb {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+/* articles styles (main page article summaries) */
+
+.articles-nav {
+    font-weight: 900;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.article-short {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d9dcdd;
+}
+
+.article-short-header {
+    padding-right: 1em;
+}
+
+.article-short-header h2 {
+    margin: 0.5em 0;
+}
+
+.article-short-content {
+    /*padding-left: 2em;*/
+}
+
+
+/* post/article pages */
+
+.article-title {
+    border-bottom: 1px solid #d9dcdd;
+}
+
+.article-header {
+    border-bottom: 3px solid #d9dcdd;
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+.backlink:hover .backlink-details {
+    display: inline;
+}
+
+.backlink-details {
+    display: none;
+}
+
+.post .article-entry {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #d9dcdd;
+}
+
+.tags a, .tag {
+    background-color: #b4b4b4;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 2.25;
+}
+
+.tags a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* page footers */
+
+.page-footer {
+    background-color: #21180d;
+    color: #f9f8cc;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.page-footer a {
+    color: #f9f8cc;
+}
+
+
+/* form styles */
+
+label > * {
+    display: inline;
+}
+
+form > * {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea, input, select {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+textarea:focus, input:focus, select:focus {
+    border-color: #bf3211;
+}
+
+textarea, input[type=text] {
+    -webkit-appearance: none;
+    /* make iOS inputs pretty */
+    width: 100%;
+    outline: 0;
+}
+
+.addon {
+    box-shadow: 0 0 0 1px #ccc;
+    padding: 8px 12px;
+}
+
+input, textarea, .article-entry input {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-family:sans-serif ;
+    margin: 1em 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    color: #f0efd1;
+    background-color: #bf3211;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #f0efd1;
+    background-color: #21180d;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+
+/* highlighting styles */
+
+.article-entry pre, .article-entry .highlight {
+    background: #21180d;
+    margin: 0 -20px;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 22.400000000000002px;
+}
+
+.article-entry .highlight .gutter pre {
+    color: #666;
+    font-size: 0.85em;
+}
+
+.article-entry pre, .article-entry code {
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
+.article-entry code {
+    background: #eee;
+    text-shadow: 0 1px #fff;
+    padding: 0 0.3em;
+}
+
+.article-entry pre code {
+    background: none;
+    text-shadow: none;
+    padding: 0;
+}
+
+.article-entry .highlight pre {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article-entry .highlight table {
+    margin: 0;
+    width: auto;
+}
+
+.article-entry .highlight td {
+    border: none;
+    padding: 0;
+}
+
+.article-entry .highlight figcaption {
+    font-size: 0.85em;
+    color: #999;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+.article-entry .highlight figcaption:before, .article-entry .highlight figcaption:after {
+    content: "";
+    display: table;
+}
+
+.article-entry .highlight figcaption:after {
+    clear: both;
+}
+
+.article-entry .highlight figcaption a {
+    float: right;
+}
+
+.article-entry .highlight .gutter pre {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.article-entry .highlight .line {
+    height: 22.400000000000002px;
+}
+
+.article-entry .highlight .line.marked {
+    background: #515151;
+}
+
+pre .comment, pre .title {
+    color: #999;
+}
+
+pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+    color: #f2777a;
+}
+
+pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+    color: #f99157;
+}
+
+pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+    color: #9c9;
+}
+
+pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+    color: #9c9;
+}
+
+pre .css .hexcolor {
+    color: #6cc;
+}
+
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+    color: #69c;
+}
+
+pre .keyword, pre .javascript .function {
+    color: #c9c;
+}
