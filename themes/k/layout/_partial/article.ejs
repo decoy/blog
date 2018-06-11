@@ -5,7 +5,8 @@
                 <%= item.title %>
             </h1>
             <div class="col c3 col-right">
-                <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span> ^</a>
+                <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>">
+                    <span class="backlink-details">Home</span> ^</a>
             </div>
         </div>
         <div class="page-subheader">
@@ -24,10 +25,4 @@
         <%- item.content %>
     </div>
 
-    <footer>
-        <%- partial('comment') %>
-    </footer>
 </article>
-
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>-->
-<!--<script>hljs.initHighlightingOnLoad();</script>-->

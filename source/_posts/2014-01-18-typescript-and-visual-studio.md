@@ -3,15 +3,15 @@ date: 2014-01-18 20:26:35
 tags: [typescript, javascript, microsoft, visual studio, web]
 ---
 
-First:  I'm a C# developer by day.  I spend a lot of time in the Visual Studio IDE.  To me, coding outside of a full IDE feels like trying to write an email without spell check.  I spend a lot of time hunting down typos, or reading through documentation to figure out the format of particular functions.  (OK, so not exactly like writing an email.)  A good IDE provides the tools to make a lot of that much simpler. (See [Intellisense](http://en.wikipedia.org/wiki/Intelligent_code_completion).)
+First:  I'm a C# developer by day.  I spend a lot of time in the Visual Studio IDE.  To me, coding outside of a full IDE feels like trying to write an email without spell check.  I spend a lot of time hunting down typos, or reading through documentation to figure out the format of particular functions.  (OK, so not exactly like writing an email.)  A good IDE provides the tools to make a lot of that much simpler. (See [Intellisense](https://en.wikipedia.org/wiki/Intelligent_code_completion).)
 
 With that in mind: 
 
->[Typescript](http://www.typescriptlang.org) is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
+>[Typescript](https://www.typescriptlang.org) is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
 
 <!-- more --> 
 
-I really like typescript and the vision it has for the 'future' of javascript.  It gives us a preview of the actual future of javascript in a way that can be used today.  (See the wikipedia article: http://en.wikipedia.org/wiki/TypeScript#ECMAScript_6_support).
+I really like typescript and the vision it has for the 'future' of javascript.  It gives us a preview of the actual future of javascript in a way that can be used today.  (See the wikipedia article: https://en.wikipedia.org/wiki/TypeScript#ECMAScript_6_support).
 
 And specifically, it gives us 'typing'.  The typing is what allows your IDE to do advanced things like safely change the name of a function everywhere it's used in your code.  It allows you to start typing a method name and get the documentation and full list of parameters expected.  You would be amazed how much time it can save you when you don't have to open up the source code to a library to figure out how to use it.
 
@@ -82,7 +82,7 @@ var Greeter = (function () {
 
 It's not a big deal to debug....
 
-Unlike [Dart](http://www.dartlang.org) or [CoffeeScript](http://coffeescript.org/), there's no new language to learn.  It simply adds some nice 'extras' to a language most of us are already familiar with. When you compile typescript it boils down to almost identical javascript, making it very easy to debug and work with in a live environment.
+Unlike [Dart](https://www.dartlang.org) or [CoffeeScript](https://coffeescript.org/), there's no new language to learn.  It simply adds some nice 'extras' to a language most of us are already familiar with. When you compile typescript it boils down to almost identical javascript, making it very easy to debug and work with in a live environment.
 
 
 ### Future

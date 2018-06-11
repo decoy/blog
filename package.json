@@ -2,8 +2,14 @@
   "name": "blog",
   "version": "2.4.5",
   "private": true,
+  "scripts": {
+    "generate": "hexo generate",
+    "draft": "hexo new draft",
+    "publish": "hexo publish",
+    "serve": "hexo serve"
+  },
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.7.1"
   },
   "dependencies": {
     "hexo": "^3.7.1",

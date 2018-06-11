@@ -22,7 +22,7 @@ code_dir: downloads/code
 
 # Directory
 source_dir: source
-public_dir: decoy.github.io
+public_dir: ../kellen.piffner.com
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts

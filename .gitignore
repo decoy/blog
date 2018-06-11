@@ -7,3 +7,6 @@ lib-cov
 *.pid
 *.gz
 node_modules/
+
+db.json
+kellen.piffner.com
