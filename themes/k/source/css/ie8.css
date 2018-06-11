@@ -3,6 +3,6 @@
     font-size: 12px !important;
 }
 
-    .social-symbol:after {
-        content: attr(title);
-    }
+.social-symbol:after {
+    content: attr(title);
+}
