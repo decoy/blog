@@ -6,24 +6,21 @@ tags:
   - redux
 ---
 
-
-
 For the longest time after React was released I had difficulty really understanding how it was supposed to be used.  Coming from years of MVC/MVVM experience in Java, C#/WPF, and Angular, React seemed really strange.  The basic tutorials and examples showed 'how' you do something, but never why, and there was pretty much no separation between view and controller logic.  
 
 Eventually I sat down and wrote something using React and Redux, following the 'best practices', to slowly understand the decisions that went into the frameworks and how they could be used.
 
-> This article is very much a high level view of React and Redux, focusing on giving a feel for the the architecture rather than specific code examples.  
-
+<!-- more -->  
 
 # Components
 
 So what did I learn?
 
-First, React is a different way of thinking of applications, but also, it's almost entirely concerned with view and view state.  MVC generally separates the view state from the view and keeps it in the controller along with other application state information.  In MVVM, the entire purpose of the 'VM' ViewModel is to keep track of view state.  But in React, these two are combined into one abstraction called a "Component".
+First, React is a different way of thinking of applications, but also, it's almost entirely concerned with view and view state.  MVC generally separates the view state from the view and keeps it in the controller along with other application state information and in MVVM, the entire purpose of the 'VM' ViewModel is to keep track of view state.  But in React, these two are combined into one abstraction called a "Component".
 
-Components are surprisingly simple.  They contain the logic for rendering your view to the page given a view state, and optional methods for changing that state. 
+Components are relatively simple.  They contain the logic for rendering your view to the page given a view state, and optional methods for changing that state. 
 
-A simple 'stateless' component, is just the render logic.  These can be represented by just a simple function that take a "props" object.
+A simple 'stateless' component is just the render logic.  These can be represented by just a simple function that take a "props" object.
 
 ``` javascript
 function Welcome(props) {
