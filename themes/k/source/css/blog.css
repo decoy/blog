@@ -38,7 +38,7 @@ body {
     padding: 0;
     font-size: 17px;
     font-family: sans-serif;
-    color: #21180d;
+    color: #000;
     background-color: #21180d;
 }
 
@@ -376,7 +376,7 @@ textarea {
 
 .article-entry pre, .article-entry .highlight {
     background: #21180d;
-    margin: 0 -20px;
+    margin: 0;
     padding: 15px 20px;
     border-style: solid;
     border-color: #ddd;
