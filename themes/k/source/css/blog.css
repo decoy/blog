@@ -36,9 +36,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
     font-family: sans-serif;
-    color: #505050;
+    color: #21180d;
     background-color: #21180d;
 }
 
@@ -100,7 +100,7 @@ blockquote {
 /* containers and grid */
 
 .container {
-    max-width: 960px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -246,10 +246,6 @@ blockquote {
     margin: 0.5em 0;
 }
 
-.article-short-content {
-    /*padding-left: 2em;*/
-}
-
 
 /* post/article pages */
 
@@ -273,8 +269,12 @@ blockquote {
 
 .post .article-entry {
     margin-bottom: 3em;
+}
+
+.article-entry h2 {
     border-bottom: 1px solid #d9dcdd;
 }
+
 
 .tags a, .tag {
     background-color: #b4b4b4;
@@ -288,7 +288,7 @@ blockquote {
 }
 
 .tags a:hover {
-    background-color: #000;
+    background-color: #21180d;
     color: #fff;
 }
 

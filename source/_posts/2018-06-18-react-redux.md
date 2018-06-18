@@ -1,10 +1,12 @@
 title: React and Redux
 tags:
-  - web
   - javascript
   - react
   - redux
+  - web
+date: 2018-06-18 15:07:23
 ---
+
 
 For the longest time after React was released I had difficulty really understanding how it was supposed to be used.  Coming from years of MVC/MVVM experience in Java, C#/WPF, and Angular, React seemed strange.  The basic tutorials and examples showed 'how' you do something, but never why, and there was pretty much no separation between view and controller logic.  
 
@@ -12,7 +14,7 @@ Eventually I sat down and wrote something using React and Redux, following the '
 
 <!-- more -->  
 
-# Components
+## Components
 
 So what did I learn?
 
@@ -61,28 +63,27 @@ This example will update on every interval "tick" creating a clock.
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
-## Updates, rendering, and the Virtual Dom
+### Updates, rendering, and the Virtual Dom
 
 When a component updates its state, it causes a re-render.  The current component and its children will update.
 
-// tree update graph
-
 Instead of directly updating the DOM, components update the "Virtual DOM", which is a DOM tree in memory.  It's not rendered directly to the browser.  This virtual DOM is then compared against the 'real' DOM and the real DOM is updated with just the changes between the two.
 
-// vdom graph
+{% limg img/react-redux/virtual_dom_diff.png title="Virtual DOM Diff" class="c12" %}
+[Image Source](https://github.com/DonaldWhyte/isomorphic-react-workshop)
 
-Combined with the 'reactive' component updates (the component only updates in reaction to setState()), this makes React quite good at only updating what's necessary and minimizing the page updates (generally the most computationally expensive part of a change.)
+Combined with the 'reactive' component updates (the component only updates in reaction to setState()), this makes React quite good at only updating what's necessary and minimizing the visible page updates (generally the most computationally expensive part of a change.)
 
 The trade-off for this performance is higher memory use:  The application's component tree is in memory twice.  Because this is all abstracted away from the application developer, though, it allows the framework to optimize performance and is generally not something you need to think about.
 
 
-# What about the rest of the app?
+## What about the rest of the app?
 
 React's simple pattern is quite flexible, allowing for state, view, and events, but it's also quite limiting.  The component tree pattern requires your dependencies to be passed through the entire tree to get to child components.
 
 This can get especially awkward if you introduce a new UI component that needs to reference a piece of application state logic that's not used in that area of the UI.  You have to either add it to the all the parent components or alternatively use some kind of js 'global'.  Neither is a good solution.  Your _application_ state rarely mirrors the UI.
 
-## Redux for application state
+### Redux for application state
 
 The solution to this problem is to move the application state into a separate store.  The most popular is [Redux](https://redux.js.org/), though there are plenty of [other options](#Other-Thoughts).
 
@@ -94,12 +95,15 @@ Redux provides three main things:
 
 Redux is unidirectional, meaning events always go through it in one way.
 
-// React Event => Dispatch (action) => Store update (reducer) => Component update (connect)
-// then loops
+```
+React component (events) => Dispatch (actions) => Store update (reducer) => Component update (connect)
+```
 
 Let's go through this flow in order.
 
 An event can be generated from anywhere, but is generally a UI event like a mouse click.
+
+> Handling events in React has a bunch of caveats.  As always, checkout the [docs for more information]( https://reactjs.org/docs/handling-events.html).
 
 ``` javascript
 class SpaceShip extends React.Component {
@@ -240,7 +244,7 @@ And here's all of it together.
 <p data-height="300" data-theme-id="4105" data-slug-hash="xzpEqe" data-default-tab="js,result" data-user="decoyahoy" data-embed-version="2" data-pen-title="React+Redux mini spaceship" class="codepen">See the Pen <a href="https://codepen.io/decoyahoy/pen/xzpEqe/">React+Redux mini spaceship</a> by kp (<a href="https://codepen.io/decoyahoy">@decoyahoy</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-## Redux Middleware and async
+### Redux Middleware and async actions
 
 This covers the basic cases of reacting to UI events, but doesn't help with working with web services and AJAX callbacks.  In the Angular world, these functions are usually placed into services that are injected into your controllers.  In general, Redux doesn't provide a solution for this, but what it does provide is a centralized way of passing messages around.
 
@@ -296,11 +300,11 @@ function warpSpeed(warp) {
   }
 }
 
-// warpSpeed returns a function that is in turn called by redux-thunk.
+// warpSpeed returns a function that is in turn called by the redux-thunk middleware.
 dispatch(warpSpeed(10));
 ```
 
-This simple pattern acts a lot like dependency injection at the function level, or a command/mediator pattern.  If you need additional 'services' you inject them through the "extra Parameter" in thunk.
+This simple pattern acts a lot like dependency injection at the function level, or a command/mediator pattern.  If you need additional 'services' you can inject them through the "extra Parameter" option.
 
 ```javascript
 function warpSpeed(warp) {
@@ -312,10 +316,10 @@ function warpSpeed(warp) {
 }
 ```
 
-I have somewhat mixed feelings on this pattern, since it's mixing your store updates and mediated command messages, but passing everything through the dispatcher does keep things simple, so I don't consider it a big deal.
+I have somewhat mixed feelings on this pattern since it's mixing your store updates and mediated command messages, but passing everything through the dispatcher does keep things simple, so I don't consider it a big deal.
 
 
-# Other thoughts
+## Other thoughts
 
 Redux is worthy of an entire article.  It’s both opinionated, but flexible.  I recommend reading through their [entire documentation](https://redux.js.org/introduction) to really get a handle on how it can be used.  Also, by learning Redux you'll have a lot of the basic React concepts reinforced. 
 
