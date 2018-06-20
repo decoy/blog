@@ -95,9 +95,7 @@ Redux provides three main things:
 
 Redux is unidirectional, meaning events always go through it in one way.
 
-```
-React component (events) => Dispatch (actions) => Store update (reducer) => Component update (connect)
-```
+`React component (events) => Dispatch (actions) => Store update (reducer) => Component update (connect)`
 
 Let's go through this flow in order.
 
