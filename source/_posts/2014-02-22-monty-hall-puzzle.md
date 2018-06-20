@@ -5,13 +5,13 @@ thumb: img/montyhall_thumb.png
 description: Simulates the Monty Hall "puzzle" using javascript, css3, angularjs and codepen.
 ---
 
-Wikipedia has an excellent article on the “probability puzzle” know as the Monty Hall problem.  
-
-> https://en.wikipedia.org/wiki/Monty_Hall_problem
+Wikipedia has an excellent article on the “probability puzzle” know as the [Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem).  
 
 It’s based around the concept of a game show where a contestant must pick one of three doors.  Behind one of the doors is the prize.  When the contestant picks the door, the host opens one of the other doors that doesn’t have the prize and then asks the contestant if they want to switch their choice.  The question: Do you switch or not? 
+
 <!-- more --> 
-> {% limg img/montyhall1.png title="Goat" %}
+
+{% limg img/montyhall1.png title="Goat" %}
 
 At first, most people guess that it doesn’t matter.  There are two closed doors, so your chance must be 1:2 to guess correctly, right?  The correct answer:  You should always switch.
 
@@ -39,7 +39,7 @@ You can enable that behavior instead by choosing the game mode "Open Others" at 
 
 You can also change the number of total doors.  If you set it to something like 20 (where your odds are now 1:20 for staying and 19:20 for switching) it might help visualize the what's going on here.  Here's a quote from Marilyn vos Savant from that Wikipedia article.
 
->Yes; you should switch. The first door has a 1/3 chance of winning, but the second door has a 2/3 chance. Here's a good way to visualize what happened. Suppose there are a million doors, and you pick door #1. Then the host, who knows what's behind the doors and will always avoid the one with the prize, opens them all except door #777,777. You'd switch to that door pretty fast, wouldn't you?
+> <cite>Yes; you should switch. The first door has a 1/3 chance of winning, but the second door has a 2/3 chance. Here's a good way to visualize what happened. Suppose there are a million doors, and you pick door #1. Then the host, who knows what's behind the doors and will always avoid the one with the prize, opens them all except door #777,777. You'd switch to that door pretty fast, wouldn't you?</cite>
 
 ## Conclusion
 

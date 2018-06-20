@@ -7,7 +7,7 @@ First:  I'm a C# developer by day.  I spend a lot of time in the Visual Studio I
 
 With that in mind: 
 
->[Typescript](https://www.typescriptlang.org) is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
+> <cite>[Typescript](https://www.typescriptlang.org) is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.</cite>
 
 <!-- more --> 
 

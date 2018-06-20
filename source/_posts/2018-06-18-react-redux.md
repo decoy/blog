@@ -30,7 +30,7 @@ function Welcome(props) {
 }
 ```
 
-> I'm using JSX in these examples.  It's a layer on top of your javascript that lets you write HTML-like code elements that are compiled into regular javascript.  I recommend reading [the JSX intro](https://reactjs.org/docs/introducing-jsx.html) for more information.  (It also wreaks havoc on my current code highlighter.)
+> **Note:**  I'm using JSX in these examples.  It's a layer on top of your javascript that lets you write HTML-like code elements that are compiled into regular javascript.  I recommend reading [the JSX intro](https://reactjs.org/docs/introducing-jsx.html) for more information.  (It also wreaks havoc on my current code highlighter.)
 
 Components can contain other components, creating a component 'tree'.  In this way, it's just like HTML, where an HTML element can contain other elements.
 
@@ -57,7 +57,7 @@ Stateful components that have states that can change are generally more complica
 
 This example will update on every interval "tick" creating a clock.
 
-> This example is pulled almost entirely from the React documentation on [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class).  
+> **Note:** This example is pulled almost entirely from the React documentation on [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class).  
 
 <p data-height="300" data-theme-id="4105" data-slug-hash="wXJbzz" data-default-tab="js,result" data-user="decoyahoy" data-embed-version="2" data-pen-title="Hello World in React" class="codepen">See the Pen <a href="https://codepen.io/decoyahoy/pen/wXJbzz/">Hello World in React</a> by kp (<a href="https://codepen.io/decoyahoy">@decoyahoy</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -70,7 +70,7 @@ When a component updates its state, it causes a re-render.  The current componen
 Instead of directly updating the DOM, components update the "Virtual DOM", which is a DOM tree in memory.  It's not rendered directly to the browser.  This virtual DOM is then compared against the 'real' DOM and the real DOM is updated with just the changes between the two.
 
 {% limg img/react-redux/virtual_dom_diff.png title="Virtual DOM Diff" class="c12" %}
-[Image Source](https://github.com/DonaldWhyte/isomorphic-react-workshop)
+<cite>[Image Source](https://github.com/DonaldWhyte/isomorphic-react-workshop)</cite>
 
 Combined with the 'reactive' component updates (the component only updates in reaction to setState()), this makes React quite good at only updating what's necessary and minimizing the visible page updates (generally the most computationally expensive part of a change.)
 
@@ -103,7 +103,7 @@ Let's go through this flow in order.
 
 An event can be generated from anywhere, but is generally a UI event like a mouse click.
 
-> Handling events in React has a bunch of caveats.  As always, checkout the [docs for more information]( https://reactjs.org/docs/handling-events.html).
+> **Note:** Handling events in React has a bunch of caveats.  As always, checkout the [docs for more information]( https://reactjs.org/docs/handling-events.html).
 
 ``` javascript
 class SpaceShip extends React.Component {
@@ -214,7 +214,7 @@ One of the requirements of Redux applications is that your store be "immutable".
   });
 ```
 
-> Read more in about immutable changes in the [redux basics tutorials](https://redux.js.org/basics/reducers#handling-actions).  If using newer javascript features, there are a few other options as well.
+> **Note:** Read more in about immutable changes in the [redux basics tutorials](https://redux.js.org/basics/reducers#handling-actions).  If using newer javascript features, there are a few other options as well.
 
 After any action is received by the store, it fires an update event.  React components are wrapped in a container component that triggers updates when the store updates.   A component is wrapped using the redux 'connect' function that maps the application store to the component properties.  If you use best practices (immutable), this map is bright enough to tell when that section of the state is different or not.  Other than that, the wrapper component doesn't do much magic.  It simply subscribes to the store 'update' event and uses setState() when something changes to trigger the normal react update.
 
@@ -244,6 +244,9 @@ And here's all of it together.
 <p data-height="300" data-theme-id="4105" data-slug-hash="xzpEqe" data-default-tab="js,result" data-user="decoyahoy" data-embed-version="2" data-pen-title="React+Redux mini spaceship" class="codepen">See the Pen <a href="https://codepen.io/decoyahoy/pen/xzpEqe/">React+Redux mini spaceship</a> by kp (<a href="https://codepen.io/decoyahoy">@decoyahoy</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+> **Note:** You'll see a "Provider" component in the full example.  The Provider simply makes the redux store available to any connected "container" component without the developer having to do anything.  It does this by utilizing some low-level React features that you generally don't need to worry about.
+
+
 ### Redux Middleware and async actions
 
 This covers the basic cases of reacting to UI events, but doesn't help with working with web services and AJAX callbacks.  In the Angular world, these functions are usually placed into services that are injected into your controllers.  In general, Redux doesn't provide a solution for this, but what it does provide is a centralized way of passing messages around.
@@ -264,7 +267,7 @@ return next(action);
 
 If the action is a function, it calls it, passing in the dispatcher, getState accessor, and an optional argument.  If the action is not a function, it's just passed on to the default behavior.
 
-> getState() returns the current state at the time of calling.  This has two purposes:  You can get the state before and after 'dispatch' has been called (letting you perform complex logic in your action creators), and you can get the state after an async action completes (important since the state could have changed since the action began.)
+> **Note:** getState() returns the current state at the time of calling.  This has two purposes:  You can get the state before and after 'dispatch' has been called (letting you perform complex logic in your action creators), and you can get the state after an async action completes (important since the state could have changed since the action began.)
 
 Here's an example of what a 'thunk' looks like.  Compare this action creator to the 'faster' and 'slower' examples above.
 
