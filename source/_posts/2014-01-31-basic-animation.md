@@ -97,7 +97,7 @@ BallCanvas.prototype.animate = function () {
   //get the current time
   var nextUpdate =  new Date().getTime();
 
-  //how much time has passed (cummulative)
+  //how much time has passed (cumulative)
   this.elapsed += nextUpdate - this.lastUpdate;
 
   //how many updates do we need to process?

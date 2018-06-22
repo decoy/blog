@@ -47,7 +47,7 @@ There are many other simulations of this puzzle out there (and youtube videos, a
 
 For me, it was a fun way to spend a few hours playing with https://codepen.io trying to make a ‘door’ animation in CSS.
 
-One thing to note: I wrote the front end in [AngularJS](https://angularjs.org/ Angularj).  I'll blog about that more later, but using the framework easily halved the code necessary to display the UI.
+One thing to note: I wrote the front end in [AngularJS](https://angularjs.org/).  I'll blog about that more later, but using the framework easily halved the code necessary to display the UI.
 
 For some more reading about the css doors:
 https://24ways.org/2010/intro-to-css-3d-transforms/
