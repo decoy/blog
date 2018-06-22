@@ -9,7 +9,7 @@
                 </h2>
                 <time pubdate datetimes="<%- item.date.toISOString() %>">
                     <h4>
-                        <%- item.date.format("DD MMM YYYY") %>
+                        <%- item.date.format("YYYY MMM DD") %>
                     </h4>
                 </time>
                 <div class="tags">
@@ -20,7 +20,9 @@
         <div class="col c8">
             <section class="article-short-content">
                 <%- item.excerpt %>
-                    <p><a href="<%- url_for(item.path) %>">Read More ></a></p>
+                    <p>
+                        <a href="<%- url_for(item.path) %>">Read More ></a>
+                    </p>
             </section>
         </div>
     </div>

@@ -12,7 +12,7 @@
         <div class="page-subheader">
             <time pubdate datetimes="<%- item.date.toISOString() %>">
                 <h4>
-                    <%- item.date.format("DD MMM YYYY") %>
+                    <%- item.date.format("YYYY MMMM DD") %>
                 </h4>
             </time>
             <div class="tags">
@@ -23,6 +23,12 @@
 
     <div class="article-entry">
         <%- item.content %>
+    </div>
+
+    <div class="article-issues">
+        <em>If you have any questions or notice anything incorrect or missing, please
+            <a href="https://github.com/decoy/blog/issues">post an issue</a> or
+            <a href="https://kellen.piffner.com/contact">contact me</a>.</em>
     </div>
 
 </article>
