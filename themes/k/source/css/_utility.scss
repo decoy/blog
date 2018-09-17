@@ -1,0 +1,99 @@
+// mimics the google material design color swatches
+// https://codepen.io/jonrohan/pen/NNGaBO
+@function createMdPalette($value, $variations) {
+  $colors: ();
+
+  $maxVar: 36;
+  $mid: $variations / 2;
+  $dist: $mid - 1;
+  $step: $maxVar / $dist;
+
+  // middle eg 500
+  //$colors: map-merge($colors, ('#{$variations/2*100}': $value));
+  $colors: map-merge(
+    $colors,
+    (
+      'base': $value,
+    )
+  );
+  $colors: map-merge(
+    $colors,
+    (
+      50: lighten($value, 38.7),
+    )
+  );
+
+  // lights
+  @for $i from 1 through $dist {
+    $percent: $maxVar - ($step * ($i - 1));
+    $lighten: $i * 100;
+    $colors: map-merge(
+      $colors,
+      (
+        $lighten: lighten($value, $percent),
+      )
+    );
+  }
+
+  // darks
+  @for $z from $dist * -1 through -1 {
+    // funky reverse loop bs
+    $i: abs($z);
+    $percent: $maxVar - ($step * ($i - 1));
+    $darken: ($variations - $i) * 100;
+    $colors: map-merge(
+      $colors,
+      (
+        $darken: darken($value, $percent),
+      )
+    );
+  }
+
+  @return $colors;
+}
+
+// dumber palette generator
+@function createPalette($color) {
+  @return (
+    'base': $color,
+    'light': mix(white, $color, 80%),
+    'lighter': mix(white, $color, 20%),
+    'dark': mix(black, $color, 20%),
+    'darker': mix(black, $color, 40%)
+  );
+}
+
+// this bugger maps to theme palettes
+// helps with tints, opacities, etc.
+@function theme-color($theme-colors: $default-theme-colors, $name: 'primary', $variant: 'base', $opacity: 1) {
+  $color: null;
+
+  // Get the color spectrum
+  $color-spectrum: map-get($theme-colors, $name);
+
+  // Get the color variant
+  @if $color-spectrum {
+    $color: map-get($color-spectrum, $variant);
+  }
+
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $opacity);
+  }
+
+  @return $color;
+}
+
+@function getcolor($palette, $variant: 'base', $opacity: 1) {
+  $color: null;
+
+  // Get the color variant
+  $color: map-get($palette, $variant);
+
+  // Set the alpha of the color
+  @if $opacity {
+    $color: rgba($color, $opacity);
+  }
+
+  @return $color;
+}

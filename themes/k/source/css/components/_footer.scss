@@ -1,0 +1,14 @@
+$color-footer-text: $pasty;
+$color-footer-back: $brown;
+
+.page-footer {
+  background-color: getcolor($color-footer-back);
+  color: getcolor($color-footer-text);
+  font-size: 2em;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.page-footer a {
+  color: getcolor($color-footer-text);
+}

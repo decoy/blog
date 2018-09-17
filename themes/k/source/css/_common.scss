@@ -1,0 +1,16 @@
+//https://codepen.io/jonrohan/pen/NNGaBO
+//https://medium.com/thinking-design/creating-a-color-language-in-web-interfaces-with-sass-maps-42898ecc6d79
+//https://www.viget.com/articles/add-colors-to-your-palette-with-color-mixing/
+
+// breakpoints
+// @media (min-width: $breakpoint-mobile) {  }
+// @media (min-width: $breakpoint-tablet) {  }
+// @media (min-width: $breakpoint-desktop) {  }
+$breakpoint-mobile: 40rem;
+$breakpoint-tablet: 80rem;
+$breakpoint-desktop: 120rem;
+
+// fonts
+$primary-font: 'Helvetica', sans-serif;
+$secondary-font: LucidaGrande, sans-serif;
+$secondary-font-bold: LucidaGrande-Bold, sans-serif;

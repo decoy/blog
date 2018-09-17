@@ -1,16 +1,30 @@
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="<%= config.author %>" />
-    <% if (page.title){ %><meta name="title" content="<%= page.title %>" /><% } %>
-    <meta name="description" content="<% if (page.description) { %><%= page.description %><% } else { %><%= config.description %><% } %>" />
-    <title><% if (page.title){ %><%= page.title %> - <% } %><%= config.title %></title>
-    <% if (page.thumb){ %><link rel="image_src" href="<%= config.root + page.thumb %>" /><% } %>
-    <% if (theme.rss){ %><link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"><% } %>
-    <% if (theme.favicon){ %><link rel="icon" href="<%- theme.favicon %>"><% } %>
-    <link rel="stylesheet" href="<%- config.root %>css/blog.css" type="text/css">
-    <!--[if lt IE 9]>
+  <meta charset="utf-8" />
+  <meta name="author" content="<%= config.author %>" />
+  <% if (page.title){ %>
+    <meta name="title" content="<%= page.title %>" />
+    <% } %>
+      <meta name="description" content="<% if (page.description) { %><%= page.description %><% } else { %><%= config.description %><% } %>"
+      />
+      <title>
+        <% if (page.title){ %>
+          <%= page.title %> -
+            <% } %>
+              <%= config.title %>
+      </title>
+      <% if (page.thumb){ %>
+        <link rel="image_src" href="<%= config.root + page.thumb %>" />
+        <% } %>
+          <% if (theme.rss){ %>
+            <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+            <% } %>
+              <% if (theme.favicon){ %>
+                <link rel="icon" href="<%- theme.favicon %>">
+                <% } %>
+                  <link rel="stylesheet" href="<%- config.root %>css/index.css" type="text/css">
+                  <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    <%- partial('google_analytics') %>
-    
+                  <%- partial('google_analytics') %>
+
 </head>

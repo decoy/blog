@@ -1,0 +1,180 @@
+/* share links */
+
+.clearfix {
+  clear: both;
+}
+
+/* base styles */
+
+html {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: getcolor($color-text);
+  background-color: getcolor($color-back-dark);
+}
+
+a {
+  text-decoration: none;
+  color: getcolor($color-link);
+}
+
+a:hover {
+  color: getcolor($color-link-highlight);
+  background-color: getcolor($color-link);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::selection {
+  /*background: #fe6;*/
+  background: #ffdb58;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2em;
+  color: getcolor($color-text);
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: getcolor($color-text);
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+  color: getcolor($color-separators);
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.625;
+}
+
+blockquote {
+  padding: 1rem;
+  margin: 1em 0 1em 0;
+  color: getcolor($color-back-dark);
+  border-left: 0.5rem solid getcolor($color-back-dark);
+  background-color: getcolor($color-back-light);
+}
+
+blockquote p {
+  padding: 0;
+  margin: 0;
+}
+
+/* containers and grid */
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main {
+  background-color: #fff;
+  padding: 0 00 2em 0;
+}
+
+@media (min-width: 871px) {
+  /* only align right when in a column */
+  .col-right {
+    text-align: right;
+  }
+  /* fill the empty div when in a column */
+  .col-fill {
+    min-height: 1px;
+  }
+}
+
+.row {
+  margin: 0;
+  overflow: auto;
+}
+
+.col {
+  float: left;
+}
+
+.table,
+.c12 {
+  width: 100%;
+}
+
+.c11 {
+  width: 91.66%;
+}
+
+.c10 {
+  width: 83.33%;
+}
+
+.c9 {
+  width: 75%;
+}
+
+.c8 {
+  width: 66.66%;
+}
+
+.c7 {
+  width: 58.33%;
+}
+
+.c6 {
+  width: 50%;
+}
+
+.c5 {
+  width: 41.66%;
+}
+
+.c4 {
+  width: 33.33%;
+}
+
+.c3 {
+  width: 25%;
+}
+
+.c2 {
+  width: 16.66%;
+}
+
+.c1 {
+  width: 8.33%;
+}
+
+/* For smaller screens, change all columns to 100% width */
+
+@media (max-width: 870px) {
+  .row .col {
+    width: 100%;
+  }
+}

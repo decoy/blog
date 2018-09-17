@@ -1,0 +1,26 @@
+.page-header {
+  margin-bottom: 2em;
+}
+
+.page-header h1,
+.page-header h4 {
+  margin: 0;
+}
+
+.page-header-title {
+  padding: 1em 0;
+  border-bottom: 1px solid getcolor($color-separators);
+}
+
+.page-subheader {
+  padding: 1em 0;
+  border-bottom: 3px solid getcolor($color-separators);
+}
+
+.page-header-title h1 a {
+  color: getcolor($color-text);
+}
+
+.page-header-title h1 a:hover {
+  color: getcolor($color-title-highlight);
+}

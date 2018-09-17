@@ -1,0 +1,73 @@
+/* form styles */
+
+$color-form-focus: $red;
+$color-button-back: $red;
+$color-button-text: $pasty;
+
+label > * {
+  display: inline;
+}
+
+form > * {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea,
+input,
+select {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: getcolor($color-form-focus);
+}
+
+textarea,
+input[type='text'] {
+  -webkit-appearance: none;
+  /* make iOS inputs pretty */
+  width: 100%;
+  outline: 0;
+}
+
+.addon {
+  box-shadow: 0 0 0 1px #ccc;
+  padding: 8px 12px;
+}
+
+input,
+textarea,
+.article-entry input {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  margin: 1em 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+}
+
+input[type='submit'] {
+  color: getcolor($color-button-text);
+  background-color: getcolor($color-button-back);
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  color: getcolor($color-button-back);
+  background-color: getcolor($color-button-text);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+textarea {
+  min-height: 200px;
+}

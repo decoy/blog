@@ -1,0 +1,28 @@
+// base colors palettes
+$red: createMdPalette(#bf3211, 10);
+$brown: createMdPalette(#372710, 10);
+$darkbrown: createMdPalette(#21180d, 10);
+$olive: createMdPalette(#cfba58, 10);
+$greenish: createMdPalette(#323310, 10);
+$snow: createMdPalette(#f0efd1, 10);
+$pasty: createMdPalette(#f9f8cc, 10);
+$dark: createMdPalette(#191919, 10);
+$yellow: createMdPalette(#fe6, 10);
+$testy: createMdPalette(#bfbcaa, 10);
+$gray: createMdPalette(#999, 10);
+
+// semantic colors
+$color-neutral-white: white;
+$color-neutral-black: black;
+$color-neutral-gray: $gray;
+
+$color-text: $darkbrown;
+$color-title: $red;
+$color-title-highlight: $pasty;
+$color-link: $red;
+$color-link-highlight: $pasty;
+$color-back-dark: $brown;
+$color-back-light: $snow;
+
+$color-separators: $brown;
+$color-selection: $yellow;

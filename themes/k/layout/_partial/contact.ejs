@@ -1,29 +1,30 @@
 <article class="<%= item.layout %>">
-    <header class="page-header">
-        <div class="row page-header-title">
-            <h1 class="col c9">
-                Hello new friend!
-                <!--<%= item.title %>-->
-            </h1>
-            <div class="col c3 col-right">
-                <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span> ^</a>
-            </div>
-        </div>
-      
-    </header>
-
-    <div class="article-entry">
-        <form action="https://formspree.io/contact@piffner.com" method="POST">
-            <div class="row">
-         
-                    <input type="text" name="name" required placeholder="Your Name *">
-                    <input type="email" name="_replyto" required placeholder="Your Email *">
-                    <input type="text" name="phone" placeholder="Your Phone Number">
-     
-                    <textarea name="message" required placeholder="Your Message *"></textarea>
-               
-            </div>
-            <input type="submit" value="Send">
-        </form>
+  <header class="page-header">
+    <div class="row page-header-title">
+      <h1 class="col c9">
+        Hello there!
+        <!--<%= item.title %>-->
+      </h1>
+      <div class="col c3 col-right">
+        <a class="ico backlink articles-nav" href="<%- config.root %>" title="Go to <%- config.root %>"><span class="backlink-details">Home</span>
+          ^</a>
+      </div>
     </div>
+
+  </header>
+
+  <div class="article-entry">
+    <form action="https://formspree.io/contact@piffner.com" method="POST">
+      <div class="row">
+
+        <input type="text" name="name" required placeholder="Your Name *">
+        <input type="email" name="_replyto" required placeholder="Your Email *">
+        <input type="text" name="phone" placeholder="Your Phone Number">
+
+        <textarea name="message" required placeholder="Your Message *"></textarea>
+
+      </div>
+      <input type="submit" value="Send">
+    </form>
+  </div>
 </article>

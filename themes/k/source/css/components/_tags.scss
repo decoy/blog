@@ -1,0 +1,21 @@
+$color-tag: getcolor($darkbrown, 400);
+$color-tag-text: getcolor($pasty);
+$color-tag-highlight: getcolor($red);
+$color-tag-text-highlight: getcolor($pasty);
+
+.tags a,
+.tag {
+  background-color: $color-tag;
+  border-radius: 3px;
+  color: $color-tag-text;
+  font-size: 0.75em;
+  padding: 3px 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 2.25;
+}
+
+.tags a:hover {
+  background-color: $color-tag-highlight;
+  color: $color-tag-text-highlight;
+}

@@ -1,0 +1,49 @@
+/* articles styles (main page article summaries) */
+
+.articles-nav {
+  font-weight: 900;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.article-short {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid getcolor($color-separators);
+}
+
+.article-short-header {
+  padding-right: 1em;
+}
+
+.article-short-header h2 {
+  margin: 0.5em 0;
+}
+
+/* post/article pages */
+
+.article-title {
+  border-bottom: 1px solid #d9dcdd;
+}
+
+.article-header {
+  border-bottom: 3px solid #d9dcdd;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+
+.backlink:hover .backlink-details {
+  display: inline;
+}
+
+.backlink-details {
+  display: none;
+}
+
+.post .article-entry {
+  margin-bottom: 3em;
+}
+
+.article-entry h2 {
+  border-bottom: 1px solid getcolor($color-separators);
+}
