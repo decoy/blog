@@ -11,10 +11,14 @@ $yellow: createMdPalette(#fe6, 10);
 $testy: createMdPalette(#bfbcaa, 10);
 $gray: createMdPalette(#999, 10);
 
+// more colors
+
 // semantic colors
 $color-neutral-white: white;
 $color-neutral-black: black;
 $color-neutral-gray: $gray;
+
+$color-background: white;
 
 $color-text: $darkbrown;
 $color-title: $red;
@@ -25,4 +29,4 @@ $color-back-dark: $brown;
 $color-back-light: $snow;
 
 $color-separators: $brown;
-$color-selection: $yellow;
+$color-text-selection: $yellow;

@@ -39,8 +39,7 @@ a:hover {
 }
 
 ::selection {
-  /*background: #fe6;*/
-  background: #ffdb58;
+  background: getcolor($color-text-selection);
 }
 
 h1,
@@ -98,7 +97,7 @@ blockquote p {
 }
 
 .main {
-  background-color: #fff;
+  background-color: $color-background;
   padding: 0 00 2em 0;
 }
 
