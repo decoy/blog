@@ -2,3 +2,5 @@ package-lock.json
 *.ejs
 .ejs
 **/*.ejs
+*.*
+**/*

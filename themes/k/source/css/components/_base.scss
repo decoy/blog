@@ -170,6 +170,10 @@ blockquote p {
   width: 8.33%;
 }
 
+.contained {
+  max-width: 100%;
+}
+
 /* For smaller screens, change all columns to 100% width */
 
 @media (max-width: 870px) {
