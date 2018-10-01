@@ -11,6 +11,7 @@ But working without a process leads to chaos. Missed deadlines. Solutions that d
 <!-- more -->  
 
 {% limg img/negotiating-a-process/confused.jpg title="Process confusion" class="contained" %}
+_(Just your average confused developer and/or product manager)_
 
 Processes exist to streamline our inputs and outputs when working with each other. It makes results predictable, repeatable, and, most importantly, changeable.
 
