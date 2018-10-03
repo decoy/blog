@@ -12,7 +12,6 @@ tag.register('limg', function (args, content) {
     if (args[i].includes("=")) {
       args[i] = args[i].replace('=', '="') + '"';
     }
-    console.log(args[i], args);
   }
 
   var attrs = args.join(' ');
