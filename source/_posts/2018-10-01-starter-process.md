@@ -67,6 +67,8 @@ You'll notice that with each size increase the range of days grows. This is beca
 
 > Over time, actual metrics can be used to determine the real world days required for features, and you can use previous features as references on sizes. It's very common for the meaning of the sizes to change over time as the teams and processes change.
 
+If a story ends up larger than a medium, it's likely too big and needs to be split up into multiple, smaller stories.  A long term goal for product management is to get to the point that each individual story is consistently around a day or two of dev team effort.  Again, the more your practice, the better you'll get at this.  In future posts I'll write more on strategies for keeping stories bite sized.
+
 If you're a product manager, be ready for surprises. What's "easy" and what's "hard" is often difficult to explain in the software world. Ask questions to understand, but trust their judgement.
 
 > xkcd's take on complexity: https://xkcd.com/1425/
@@ -77,7 +79,7 @@ Now that you have stories with estimates, what's actually going to be worked on 
 
 This part requires both teams, product management and development, to sit down and discuss the next items. Stories are gone over and prioritized. Questions are asked and answered.
 
-In the end, you'll have a week or two of work sorted onto the 'todo' column of your card wall.
+Product management, however, is responsible for adding the stories to the TODO column, sorted by priroity.  In the end, you should have a week or two of work sorted onto the 'TODO' column of your card wall.
 
 ## Special considerations
 
@@ -103,7 +105,7 @@ If you're using a digital tool, like Trello, checkbox style tasks are built in. 
 
 Later, you might have a separate 'tasks' cardwall for keeping track of who is working on what and where it is in the process. The life of a task is often different than the life a feature.
 
-# Doing
+# DOING - Do the work
 
 When a card is in 'doing' that means the tasks are actively being worked on.
 
@@ -115,7 +117,7 @@ When you're first starting, try pulling in card and once everyone has something 
 
 Once all the tasks of a card is complete, it can be moved into the Review column.
 
-# REVIEW
+# REVIEW - Accepting/rejecting
 
 "Review" consists of the product manager and other feature stakeholders checking out the implementation and providing feedback, or approving it for release.
 
@@ -170,7 +172,6 @@ Alright, the above had a lot of text, so let's do a quick summary of roles and s
 Who: Project Managers
 When: Continuous
 What: Creating and improving user stories. Cards with the who, what, why.
-
 
 Who: Developers
 When: Weekly
