@@ -1,7 +1,6 @@
 title: Your interview questions are awful (but we can fix them)
 tags:
-  - hello
-  - world
+  - interviewing
 date: 2018-10-12 10:17:16
 ---
 
