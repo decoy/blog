@@ -37,3 +37,7 @@
 .article-entry h1 {
   border-bottom: 1px solid getcolor($color-separators);
 }
+
+.article-short .article-image cite {
+  display: none;
+}

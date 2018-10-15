@@ -1,12 +1,18 @@
 title: Your interview questions are awful (but we can fix them)
 tags:
-  - interviews
+  - hello
+  - world
 date: 2018-10-12 10:17:16
 ---
 
-The first time I was involved in technical interview I was asked to present and grade a coding question. The question: "What does this script do?" The candidate was then handed a print out of a (relatively) simple VBScript that changed the computer name of a Windows PC.
+<div class="article-image">
+  {% limg img/bad-interview-questions/branko-stancevic-417172-unsplash.jpg title="Programming Skills" class="c12" %}
+  <cite>[Photo by Branko Stancevic on Unsplash](https://unsplash.com/@landb?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge)</cite>
+</div>
 
-Only one candidate got it right. Every single other one failed the question with an "I don't know."
+The first time I was involved in technical interview I was asked to present and grade a coding question: "What does this script do?" The candidate was then handed a print out of a (relatively) simple VBScript that changed the computer name of a Windows PC.
+
+Only one candidate answered correctly. Every other candidate failed the question with an "I don't know."
 
 On first glance, this seems a reasonable question. Part of the job they were interviewing for often required working with scripts to deploy computers and software. I told them that we weren't looking for a specific answer, just a general idea of "What does this do?" The candidate failing to even make a guess seems like an interview fail. They couldn't think on their feet. They couldn't think creatively.
 
@@ -14,13 +20,13 @@ But was it really a failure of the interviewee?
 
 <!-- more -->  
 
-As a test, we handed out that same question to a few of non-technical folks in the office. All of them got it right within a minute of skimming it.
+As a test, we handed out that same question to a few of non-technical folks in the office. All of them answered correctly within a minute of skimming it by looking at method and variable names and guessing.
 
 It's been a long time and many interviews since that first one and I now look at their failure to respond as a failure on my part as the interviewer. If a non-technical person could answer the question correctly, most of these candidates should have gotten it right, too. So why didn't they? Why did they only answer with a "I don't know?"
 
 # Fear
 
-Job interviews are scary. Unless they don't need the job, there's real risk involved in failing an interview. Paying bills, making rent, supporting your family, growing their career in a direction that really excites them. The more they want or need the job, the more that fear is present with them in an interview.
+Job interviews are scary. Unless they don't need the job, there's real risk involved in failing an interview. Paying bills, making rent, supporting their family, growing their career in a direction that really excites them. The more they want or need the job, the more that fear is present with them in an interview.
 
 An important part of an interviewer's job is to help them relax. You're not going to learn the full range of their skills if they're too nervous to answer your questions. The easiest way to help a candidate relax is to help remove their fear of failing. You can do this surprisingly simply: Ask them more questions that they're going to fail.
 
@@ -38,7 +44,7 @@ When you have a question with a specific answer you create a very obvious point 
 
 To help mitigate this, you ask lots of questions. Think about it like this: Would you prefer one chance, 0% or 100%, on passing a test, or 10 chances, where it's possible to get a 70% passing grade?
 
-In the example of the computer rename script, the skill I was looking for was "The ability to work with scripts". Preferably editing, but just being able to read them to see if it "did what you want" would also have been fine.
+In the example of the computer rename script, the skill I was looking for was "The ability to work with scripts". Preferably creating and editing, but just being able to read them to see if it "did what you want" would have been fine.
 
 A better question: "Have you ever used a script to automate a task before?"
 
@@ -48,11 +54,18 @@ For example: If the candidate said yes, ask them about the time they used it. As
 
 Even if they said no, they still haven't necessarily failed. Ask them if they think they could "figure it out." (I've yet to interview a technical job candidate who wasn't confident they could figure something out that they didn't know given time and google). Now do the handout. The handout in our interview was an actual script we used daily. It was an accurate representation of the job. _Tell them that_. It gives them incentive to really try figuring it out since it's the job they _want_ to do. For an even more accurate job representation, hand them a laptop with Google ready. Letting someone know that you won't arbitrarily limit their tools to get a job done does wonders for relaxing them.
 
+<div class="article-image">
+  {% limg img/bad-interview-questions/rawpixel-423656-unsplash.jpg title="By the power of your beard, Google the answer" class="c12" %}
+  <cite>
+    By the power of your beard and Google, figure out the answer.  [Photo by rawpixel on Unsplash](https://unsplash.com/@rawpixel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge)
+  </cite>
+</div>
+
 # Measuring a skill
 
-After reading the above, you're probably thinking "But that question sounds too easy with all that help". You're right! And isn't that great? Think about how many candidates could show that they could _really do the job_. We just went from 1, to (likely) all of them.
+After reading the above, you're probably thinking "But that question sounds too easy with all that help". You're right! And isn't that great? Think about how many candidates could show that they could _really do the job_. We just went from one, to (likely) all of them.
 
-On top of that, if they went down the first question path, you likely know how deep their scripting skills go. You can _measure_ it relative to your own skill. Are they better at scripting than you? Worse? Maybe they've written lots of scripts, but in different areas than yours. Write that down. Those are all important impressions to use when comparing candidates against each other.
+On top of that, if they went down the first question path, you know how deep their scripting skills go. You can _measure_ it relative to your own skill. Are they better at scripting than you? Worse? Maybe they've written lots of scripts, but in different areas than yours. Write that down. Those are all important impressions to use when comparing candidates against each other.
 
 Before you begin an interview, you should have a list of specific skills you're looking for and a list of open ended questions that can help candidates tell you about times they've used those skills.
 
@@ -80,7 +93,7 @@ Once you have the relative skill of candidates, it's pretty straightforward to c
 
 Also, you should have multiple people performing these skill measurements, and the people doing those measurements should have the skill level you're looking for. (There's no real point in having your worst communicator interviewing someone about their email skills.)
 
-One other thing to keep in mind: Sometimes a candidate comes along with a great set of skills that don't neatly fit into any one role. If you can make it work in your organization, these people make _great_ employees. The diversity of those skills can lead to innovative solutions to difficult problems. When you can: fit roles to people, not people to roles.
+One other thing to keep in mind: Sometimes a candidate comes along with a great set of skills that doesn't neatly fit into any one role. If you can make it work in your organization, these people make _great_ employees. The diversity of those skills can lead to innovative solutions to difficult problems. When you can: fit roles to people, not people to roles.
 
 # Iterating your process
 
@@ -88,9 +101,9 @@ A lot of my opinions on interviews formed after my boss handed me a stack of dev
 
 During that time, I iterated. I wrote down which questions worked well to draw out a candidates skills and which ones didn't. Most of the time I could confidently tell within those 30 minutes whether they had what we wanted or not. And, if I wasn't confident, I passed them on anyway. I didn't want my gut 'feeling' to be the deciding factor on someone's employment.
 
-But I was mostly surprised at how effective this method was. At the end of every interview, I could accurately describe their skills relative to mine to my manager so he knew which ones to interview next, and I could repeat the results of the process with the next candidate.
+But I was mostly surprised at how effective this method was. At the end of every interview, I could accurately communicate their skills relative to mine to my manager so he knew which ones to interview next, and I could repeat the results of the process with the next candidate.
 
-Iteration is always important. Something I've learned relatively recently is to keep metrics at each 'stage' of an interview process. Every stage acts like a 'filter'. It's an arbitrary line in the sand that they have to make it across. "The top 10 candidates". It's important to know where people fall out, and if great candidates are falling through. If you see a problem fix it and try again.
+Iteration is always important. Something I've learned relatively recently is to keep metrics at each 'stage' of an interview process. Every stage acts like a 'filter'. They're an arbitrary line in the sand that candidates have to make it across. "The top 10 candidates". It's important to know where people fall out and if great candidates are falling through. If you see a problem, fix it and try again.
 
 # Conclusion - Interviews vs. Tests
 
