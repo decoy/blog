@@ -4,10 +4,10 @@
 
 # Site
 title: 'kellen.piffner.com'
-subtitle: 
+subtitle:
 description: Developer blogging about web technology, healthcare, and whatever else comes to mind.
 author: Kellen Piffner
-email: 
+email:
 language: English
 
 # URL
@@ -89,7 +89,7 @@ marked:
   pedantic: false
   sanitize: false
   tables: true
-  breaks: true
+  breaks: false
   smartLists: true
   smartypants: true
 
