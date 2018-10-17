@@ -3,7 +3,7 @@
   "version": "2.4.5",
   "private": true,
   "scripts": {
-    "generate": "hexo generate",
+    "generate": "hexo generate -f",
     "draft": "hexo new draft",
     "publish": "hexo publish",
     "serve": "hexo serve"
