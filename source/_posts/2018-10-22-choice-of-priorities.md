@@ -6,7 +6,7 @@ date: 2018-10-22 14:17:40
 ---
 
 <div class="article-image">
-  {% limg img/priorities/brendan-church-182747-unsplash.jpg title="Which way?" class="c12" %}
+  {% limg img/choice-of-priorities/brendan-church-182747-unsplash.jpg title="Which way?" class="c12" %}
   <div class="article-image-sub">
     <cite>[Photo by Brendan Church on Unsplash](https://unsplash.com/@bdchu614?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)</cite>
   </div>
