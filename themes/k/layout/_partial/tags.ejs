@@ -1,5 +1,9 @@
-<% if (item.tags && item.tags.length){ %>
-  <% item.tags.forEach(function(tag) { %>
+<% if (item.tags && item.tags.length > 0) { %>
+  <%
+    var tags = item.tags.map(t => ({ name: t.name, path: t.path }));
+    tags.sort((a, b) => ('' + a.name).localeCompare(b.name));
+  %>
+  <% tags.forEach(function(tag) { %>
     <a href='<%= config.root + tag.path %>' class="article-tag"><%= tag.name %></a>
   <% }); %>
 <% } %>
