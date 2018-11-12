@@ -1,7 +1,19 @@
-title: compromise-and-test
+title: Compromise and Test
 tags:
   - agile
+  - short
+date: 2018-11-12 09:41:03
 ---
+
+
+<div class="article-image">
+  {% limg img/compromise-and-test/rawpixel-669602-unsplash.jpg title="Let's argue about computer things" class="c12" %}
+  <div class="article-image-sub">
+    <cite>
+      [Photo by rawpixel on Unsplash](https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+    </cite>
+  </div>
+</div>
 
 In my [previous post](2018-10-22-choice-of-priorities) I talked about what to do when presented with a question of priorities.  I argue that the answer is to do "both".  But what about when those two priorities are mutually exclusive?  "Do we make the button green or orange?"  You can't really do both in this case, right?
 
@@ -17,4 +29,4 @@ In this case, it's not a question of difficulty, but of cost.  Doing them both c
 
 Even for simpler things, where 'common sense' dictates one is probably better than the other, data (or customer feedback) can often reveal completely different understandings.
 
-And beyond ending up with a better solution, this is another way to get arguing team members to compromise and even compete over better solutions. 
+And beyond ending up with a better solution, this is another way to get arguing team members to compromise and work together, which is almost always more valuable than getting a button color just right.
