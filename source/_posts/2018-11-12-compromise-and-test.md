@@ -10,7 +10,7 @@ date: 2018-11-12 09:41:03
   {% limg img/compromise-and-test/rawpixel-669602-unsplash.jpg title="Let's argue about computer things" class="c12" %}
   <div class="article-image-sub">
     <cite>
-      [Photo by rawpixel on Unsplash](https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+      <a href="https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Photo by rawpixel on Unsplash</a>
     </cite>
   </div>
 </div>

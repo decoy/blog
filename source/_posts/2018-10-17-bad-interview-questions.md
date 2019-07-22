@@ -7,7 +7,9 @@ date: 2018-10-17 10:17:16
 <div class="article-image">
   {% limg img/bad-interview-questions/branko-stancevic-417172-unsplash.jpg title="Programming Skills" class="c12" %}
   <div class="article-image-sub">
-    <cite>[Photo by Branko Stancevic on Unsplash](https://unsplash.com/@landb?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)</cite>
+    <cite>
+      <a href="https://unsplash.com/@bdchu614?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Photo by Brendan Church on Unsplash</a>
+    </cite>
   </div>
 </div>
 
@@ -31,7 +33,7 @@ It's been a long time and many interviews since those first ones and I now look 
   {% limg img/bad-interview-questions/ben-white-292680-unsplash.jpg title="Nerves" class="c12" %}
   <div class="article-image-sub">
     <cite>
-      [Photo by Ben White on Unsplash](https://unsplash.com/@benwhitephotography?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+      <a href="https://unsplash.com/@benwhitephotography?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Photo by Ben White on Unsplash</a>
     </cite>
   </div>
 </div>
@@ -69,7 +71,7 @@ Even if they said no, they still haven't necessarily failed. Ask them if they th
   <div class="article-image-sub">
   <div>By the power of your beard and Google, figure out the answer. </div>
   <cite>
-    [Photo by rawpixel on Unsplash](https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+    <a href="https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Photo by rawpixel on Unsplash</a>
   </cite>
   </div>
 </div>
@@ -127,7 +129,7 @@ Iteration is always important. Something I've learned relatively recently is to 
   {% limg img/bad-interview-questions/rawpixel-1046277-unsplash.jpg title="Another successful handshake" class="c12" %}
   <div class="article-image-sub">
     <cite>
-      [Photo by rawpixel on Unsplash](https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge)
+      <a href="https://unsplash.com/@rawpixel?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge">Photo by rawpixel on Unsplash</a>
     </cite>
   </div>
 </div>
