@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="266px" height="352px" viewBox="0 0 266 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Microphone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ED1067" offset="0%"/>
+            <stop stop-color="#412D90" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.3838141%" x2="50%" y2="53.9372086%" id="linearGradient-2">
+            <stop stop-color="#941F7C" offset="0%"/>
+            <stop stop-color="#422D90" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="43.2099462%" y1="-9.4701066%" x2="44.5320975%" y2="137.164623%" id="linearGradient-3">
+            <stop stop-color="#E81168" offset="0%"/>
+            <stop stop-color="#452C8F" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-86.000000, -31.000000)" fill-rule="nonzero">
+            <g id="Microphone" transform="translate(90.000000, 31.000000)">
+                <path d="M179.701961,69.1666667 L179.701961,179.833333 C179.701961,198.854167 172.673464,215.137153 158.616471,228.682292 C144.559477,242.227431 127.661176,249 107.921569,249 C88.1819608,249 71.2836601,242.227431 57.2266667,228.682292 C43.1696732,215.137153 36.1411765,198.854167 36.1411765,179.833333 L36.1411765,69.1666667 C36.1411765,50.1458333 43.1696732,33.8628472 57.2266667,20.3177083 C71.2836601,6.77256944 88.1819608,0 107.921569,0 C127.661176,0 144.559477,6.77256944 158.616471,20.3177083 C172.673464,33.8628472 179.701961,50.1458333 179.701961,69.1666667 Z" id="Path" fill="url(#linearGradient-1)"/>
+                <path d="M30.6196078,133 L0.501960784,133 L0.501960784,153 C0.501960784,191.666667 8.03137255,223 23.0901961,247 C38.1490196,271 62.5777778,284.833333 96.3764706,288.5 L96.3764706,325.5 L47.9372549,325.5 L47.9372549,347.5 L166.14902,347.5 L166.14902,325.5 L118.964706,325.5 L118.964706,288.5 C153.43268,285.166667 178.196078,271.333333 193.254902,247 C208.313725,222.666667 215.843137,191.333333 215.843137,153 L215.843137,133 L185.223529,133 L185.223529,153 L195.262745,153 L195.262745,165.5 C193.924183,232.833333 164.894118,266.5 108.172549,266.5 C51.4509804,266.5 22.0862745,232.833333 20.0784314,165.5 L20.0784314,153 L30.6196078,153 L30.6196078,133 Z" id="Path" stroke="url(#linearGradient-2)" stroke-width="8" fill="#FFFFFF"/>
+                <polygon id="Path-2" stroke="url(#linearGradient-3)" stroke-width="8" fill="#FFFFFF" points="102.4 185.5 256 50 227.388235 18 102.4 125 42.6666667 61.5 14.054902 89.5"/>
+            </g>
+        </g>
+    </g>
+</svg>
